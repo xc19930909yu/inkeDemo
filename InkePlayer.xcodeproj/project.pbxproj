@@ -30,6 +30,8 @@
 		023A907620FDFD4000AD130C /* SXTNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A907420FDFD4000AD130C /* SXTNearViewController.m */; };
 		023A907720FDFD4000AD130C /* SXTNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023A907520FDFD4000AD130C /* SXTNearViewController.xib */; };
 		023A907A20FE08A300AD130C /* SXTMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A907920FE08A300AD130C /* SXTMainTopView.m */; };
+		02F6972120FE14520045203C /* SXTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F6971F20FE14520045203C /* SXTLoginViewController.m */; };
+		02F6972220FE14520045203C /* SXTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F6972020FE14520045203C /* SXTLoginViewController.xib */; };
 		953BFA54090E4856F3D2683D /* libPods-InkePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B37ECD0F5C5B3337F1ED0BE2 /* libPods-InkePlayer.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,9 @@
 		023A907520FDFD4000AD130C /* SXTNearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTNearViewController.xib; sourceTree = "<group>"; };
 		023A907820FE08A300AD130C /* SXTMainTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTMainTopView.h; sourceTree = "<group>"; };
 		023A907920FE08A300AD130C /* SXTMainTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTMainTopView.m; sourceTree = "<group>"; };
+		02F6971E20FE14520045203C /* SXTLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTLoginViewController.h; sourceTree = "<group>"; };
+		02F6971F20FE14520045203C /* SXTLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTLoginViewController.m; sourceTree = "<group>"; };
+		02F6972020FE14520045203C /* SXTLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTLoginViewController.xib; sourceTree = "<group>"; };
 		3DB9B518D1C00361439CA32B /* Pods-InkePlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InkePlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-InkePlayer/Pods-InkePlayer.release.xcconfig"; sourceTree = "<group>"; };
 		6B6B1CAE27E8FD5CECA70104 /* Pods-InkePlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InkePlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InkePlayer/Pods-InkePlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		B37ECD0F5C5B3337F1ED0BE2 /* libPods-InkePlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InkePlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +172,9 @@
 		023A904020FDC9E000AD130C /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				02F6971E20FE14520045203C /* SXTLoginViewController.h */,
+				02F6971F20FE14520045203C /* SXTLoginViewController.m */,
+				02F6972020FE14520045203C /* SXTLoginViewController.xib */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -342,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F6972220FE14520045203C /* SXTLoginViewController.xib in Resources */,
 				023A903320FDC87A00AD130C /* LaunchScreen.storyboard in Resources */,
 				023A903020FDC87A00AD130C /* Assets.xcassets in Resources */,
 				023A907220FDFD1F00AD130C /* SXTHotViewController.xib in Resources */,
@@ -386,6 +395,7 @@
 				023A905F20FDE4D800AD130C /* SXTMeController.m in Sources */,
 				023A906720FDF59F00AD130C /* SXTLauchViewController.m in Sources */,
 				023A905620FDE49400AD130C /* BaseViewController.m in Sources */,
+				02F6972120FE14520045203C /* SXTLoginViewController.m in Sources */,
 				023A903620FDC87A00AD130C /* main.m in Sources */,
 				023A906C20FDFCFD00AD130C /* XSTFucusViewController.m in Sources */,
 				023A907120FDFD1F00AD130C /* SXTHotViewController.m in Sources */,
