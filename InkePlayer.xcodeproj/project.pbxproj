@@ -13,6 +13,24 @@
 		023A903020FDC87A00AD130C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023A902F20FDC87A00AD130C /* Assets.xcassets */; };
 		023A903320FDC87A00AD130C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023A903120FDC87A00AD130C /* LaunchScreen.storyboard */; };
 		023A903620FDC87A00AD130C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A903520FDC87A00AD130C /* main.m */; };
+		023A904C20FDDC8800AD130C /* SXTTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A904B20FDDC8800AD130C /* SXTTabBarViewController.m */; };
+		023A904F20FDDCB100AD130C /* SXTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A904E20FDDCB100AD130C /* SXTTabBar.m */; };
+		023A905620FDE49400AD130C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A905520FDE49400AD130C /* BaseViewController.m */; };
+		023A905A20FDE4B800AD130C /* SXTMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A905820FDE4B800AD130C /* SXTMainController.m */; };
+		023A905B20FDE4B800AD130C /* SXTMainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023A905920FDE4B800AD130C /* SXTMainController.xib */; };
+		023A905F20FDE4D800AD130C /* SXTMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A905D20FDE4D800AD130C /* SXTMeController.m */; };
+		023A906020FDE4D800AD130C /* SXTMeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023A905E20FDE4D800AD130C /* SXTMeController.xib */; };
+		023A906320FDE5E800AD130C /* SXTNaVigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A906220FDE5E800AD130C /* SXTNaVigationController.m */; };
+		023A906720FDF59F00AD130C /* SXTLauchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A906520FDF59E00AD130C /* SXTLauchViewController.m */; };
+		023A906820FDF59F00AD130C /* SXTLauchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023A906620FDF59E00AD130C /* SXTLauchViewController.xib */; };
+		023A906C20FDFCFD00AD130C /* XSTFucusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A906A20FDFCFD00AD130C /* XSTFucusViewController.m */; };
+		023A906D20FDFCFD00AD130C /* XSTFucusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023A906B20FDFCFD00AD130C /* XSTFucusViewController.xib */; };
+		023A907120FDFD1F00AD130C /* SXTHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A906F20FDFD1F00AD130C /* SXTHotViewController.m */; };
+		023A907220FDFD1F00AD130C /* SXTHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023A907020FDFD1F00AD130C /* SXTHotViewController.xib */; };
+		023A907620FDFD4000AD130C /* SXTNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A907420FDFD4000AD130C /* SXTNearViewController.m */; };
+		023A907720FDFD4000AD130C /* SXTNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023A907520FDFD4000AD130C /* SXTNearViewController.xib */; };
+		023A907A20FE08A300AD130C /* SXTMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A907920FE08A300AD130C /* SXTMainTopView.m */; };
+		953BFA54090E4856F3D2683D /* libPods-InkePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B37ECD0F5C5B3337F1ED0BE2 /* libPods-InkePlayer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +44,39 @@
 		023A903220FDC87A00AD130C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		023A903420FDC87A00AD130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		023A903520FDC87A00AD130C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		023A904620FDCC9400AD130C /* yingke.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yingke.pch; sourceTree = "<group>"; };
+		023A904920FDDB5D00AD130C /* Yingke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Yingke.h; sourceTree = "<group>"; };
+		023A904A20FDDC8800AD130C /* SXTTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTTabBarViewController.h; sourceTree = "<group>"; };
+		023A904B20FDDC8800AD130C /* SXTTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTTabBarViewController.m; sourceTree = "<group>"; };
+		023A904D20FDDCB100AD130C /* SXTTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTTabBar.h; sourceTree = "<group>"; };
+		023A904E20FDDCB100AD130C /* SXTTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTTabBar.m; sourceTree = "<group>"; };
+		023A905420FDE49400AD130C /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		023A905520FDE49400AD130C /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		023A905720FDE4B800AD130C /* SXTMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTMainController.h; sourceTree = "<group>"; };
+		023A905820FDE4B800AD130C /* SXTMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTMainController.m; sourceTree = "<group>"; };
+		023A905920FDE4B800AD130C /* SXTMainController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTMainController.xib; sourceTree = "<group>"; };
+		023A905C20FDE4D800AD130C /* SXTMeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTMeController.h; sourceTree = "<group>"; };
+		023A905D20FDE4D800AD130C /* SXTMeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTMeController.m; sourceTree = "<group>"; };
+		023A905E20FDE4D800AD130C /* SXTMeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTMeController.xib; sourceTree = "<group>"; };
+		023A906120FDE5E800AD130C /* SXTNaVigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTNaVigationController.h; sourceTree = "<group>"; };
+		023A906220FDE5E800AD130C /* SXTNaVigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTNaVigationController.m; sourceTree = "<group>"; };
+		023A906420FDF59E00AD130C /* SXTLauchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTLauchViewController.h; sourceTree = "<group>"; };
+		023A906520FDF59E00AD130C /* SXTLauchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTLauchViewController.m; sourceTree = "<group>"; };
+		023A906620FDF59E00AD130C /* SXTLauchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTLauchViewController.xib; sourceTree = "<group>"; };
+		023A906920FDFCFD00AD130C /* XSTFucusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSTFucusViewController.h; sourceTree = "<group>"; };
+		023A906A20FDFCFD00AD130C /* XSTFucusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSTFucusViewController.m; sourceTree = "<group>"; };
+		023A906B20FDFCFD00AD130C /* XSTFucusViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XSTFucusViewController.xib; sourceTree = "<group>"; };
+		023A906E20FDFD1F00AD130C /* SXTHotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTHotViewController.h; sourceTree = "<group>"; };
+		023A906F20FDFD1F00AD130C /* SXTHotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTHotViewController.m; sourceTree = "<group>"; };
+		023A907020FDFD1F00AD130C /* SXTHotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTHotViewController.xib; sourceTree = "<group>"; };
+		023A907320FDFD4000AD130C /* SXTNearViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTNearViewController.h; sourceTree = "<group>"; };
+		023A907420FDFD4000AD130C /* SXTNearViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTNearViewController.m; sourceTree = "<group>"; };
+		023A907520FDFD4000AD130C /* SXTNearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTNearViewController.xib; sourceTree = "<group>"; };
+		023A907820FE08A300AD130C /* SXTMainTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTMainTopView.h; sourceTree = "<group>"; };
+		023A907920FE08A300AD130C /* SXTMainTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTMainTopView.m; sourceTree = "<group>"; };
+		3DB9B518D1C00361439CA32B /* Pods-InkePlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InkePlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-InkePlayer/Pods-InkePlayer.release.xcconfig"; sourceTree = "<group>"; };
+		6B6B1CAE27E8FD5CECA70104 /* Pods-InkePlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InkePlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InkePlayer/Pods-InkePlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		B37ECD0F5C5B3337F1ED0BE2 /* libPods-InkePlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InkePlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				953BFA54090E4856F3D2683D /* libPods-InkePlayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +96,8 @@
 			children = (
 				023A902520FDC87200AD130C /* InkePlayer */,
 				023A902420FDC87200AD130C /* Products */,
+				ADA3CF8DE93CF61F8C7A9D75 /* Pods */,
+				9A902700F3AB26A42F4EF3B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +112,176 @@
 		023A902520FDC87200AD130C /* InkePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				023A903C20FDC9E000AD130C /* Class */,
+				023A904520FDC9E000AD130C /* Supporting Files */,
+			);
+			path = InkePlayer;
+			sourceTree = "<group>";
+		};
+		023A903C20FDC9E000AD130C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				023A903D20FDC9E000AD130C /* Show */,
+				023A903E20FDC9E000AD130C /* NetWork */,
+				023A903F20FDC9E000AD130C /* Other */,
+				023A904020FDC9E000AD130C /* Me */,
+				023A904120FDC9E000AD130C /* Live */,
+				023A904220FDC9E000AD130C /* Lib */,
+				023A904320FDC9E000AD130C /* Helpers */,
+				023A904420FDC9E000AD130C /* Base */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		023A903D20FDC9E000AD130C /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				023A905320FDE46300AD130C /* Controller */,
+				023A905120FDE46300AD130C /* Handler */,
+				023A905020FDE46300AD130C /* Model */,
+				023A905220FDE46300AD130C /* View */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		023A903E20FDC9E000AD130C /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		023A903F20FDC9E000AD130C /* Other */ = {
+			isa = PBXGroup;
+			children = (
 				023A902620FDC87200AD130C /* AppDelegate.h */,
 				023A902720FDC87200AD130C /* AppDelegate.m */,
 				023A902920FDC87200AD130C /* ViewController.h */,
 				023A902A20FDC87200AD130C /* ViewController.m */,
-				023A902C20FDC87200AD130C /* Main.storyboard */,
-				023A902F20FDC87A00AD130C /* Assets.xcassets */,
+				023A904620FDCC9400AD130C /* yingke.pch */,
+				023A904920FDDB5D00AD130C /* Yingke.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		023A904020FDC9E000AD130C /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		023A904120FDC9E000AD130C /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		023A904220FDC9E000AD130C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		023A904320FDC9E000AD130C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		023A904420FDC9E000AD130C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				023A904A20FDDC8800AD130C /* SXTTabBarViewController.h */,
+				023A904B20FDDC8800AD130C /* SXTTabBarViewController.m */,
+				023A906120FDE5E800AD130C /* SXTNaVigationController.h */,
+				023A906220FDE5E800AD130C /* SXTNaVigationController.m */,
+				023A904D20FDDCB100AD130C /* SXTTabBar.h */,
+				023A904E20FDDCB100AD130C /* SXTTabBar.m */,
+				023A905420FDE49400AD130C /* BaseViewController.h */,
+				023A905520FDE49400AD130C /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		023A904520FDC9E000AD130C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				023A903120FDC87A00AD130C /* LaunchScreen.storyboard */,
 				023A903420FDC87A00AD130C /* Info.plist */,
+				023A902C20FDC87200AD130C /* Main.storyboard */,
+				023A902F20FDC87A00AD130C /* Assets.xcassets */,
 				023A903520FDC87A00AD130C /* main.m */,
 			);
-			path = InkePlayer;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		023A905020FDE46300AD130C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		023A905120FDE46300AD130C /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		023A905220FDE46300AD130C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				023A907820FE08A300AD130C /* SXTMainTopView.h */,
+				023A907920FE08A300AD130C /* SXTMainTopView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		023A905320FDE46300AD130C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				023A905720FDE4B800AD130C /* SXTMainController.h */,
+				023A905820FDE4B800AD130C /* SXTMainController.m */,
+				023A905920FDE4B800AD130C /* SXTMainController.xib */,
+				023A906920FDFCFD00AD130C /* XSTFucusViewController.h */,
+				023A906A20FDFCFD00AD130C /* XSTFucusViewController.m */,
+				023A906B20FDFCFD00AD130C /* XSTFucusViewController.xib */,
+				023A906E20FDFD1F00AD130C /* SXTHotViewController.h */,
+				023A906F20FDFD1F00AD130C /* SXTHotViewController.m */,
+				023A907020FDFD1F00AD130C /* SXTHotViewController.xib */,
+				023A907320FDFD4000AD130C /* SXTNearViewController.h */,
+				023A907420FDFD4000AD130C /* SXTNearViewController.m */,
+				023A907520FDFD4000AD130C /* SXTNearViewController.xib */,
+				023A905C20FDE4D800AD130C /* SXTMeController.h */,
+				023A905D20FDE4D800AD130C /* SXTMeController.m */,
+				023A905E20FDE4D800AD130C /* SXTMeController.xib */,
+				023A906420FDF59E00AD130C /* SXTLauchViewController.h */,
+				023A906520FDF59E00AD130C /* SXTLauchViewController.m */,
+				023A906620FDF59E00AD130C /* SXTLauchViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A902700F3AB26A42F4EF3B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B37ECD0F5C5B3337F1ED0BE2 /* libPods-InkePlayer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADA3CF8DE93CF61F8C7A9D75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B1CAE27E8FD5CECA70104 /* Pods-InkePlayer.debug.xcconfig */,
+				3DB9B518D1C00361439CA32B /* Pods-InkePlayer.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 023A903920FDC87A00AD130C /* Build configuration list for PBXNativeTarget "InkePlayer" */;
 			buildPhases = (
+				A62DA68638FF3DB8AB4E48BC /* [CP] Check Pods Manifest.lock */,
 				023A901F20FDC87200AD130C /* Sources */,
 				023A902020FDC87200AD130C /* Frameworks */,
 				023A902120FDC87200AD130C /* Resources */,
@@ -130,11 +344,38 @@
 			files = (
 				023A903320FDC87A00AD130C /* LaunchScreen.storyboard in Resources */,
 				023A903020FDC87A00AD130C /* Assets.xcassets in Resources */,
+				023A907220FDFD1F00AD130C /* SXTHotViewController.xib in Resources */,
+				023A906820FDF59F00AD130C /* SXTLauchViewController.xib in Resources */,
+				023A905B20FDE4B800AD130C /* SXTMainController.xib in Resources */,
+				023A906D20FDFCFD00AD130C /* XSTFucusViewController.xib in Resources */,
+				023A907720FDFD4000AD130C /* SXTNearViewController.xib in Resources */,
 				023A902E20FDC87200AD130C /* Main.storyboard in Resources */,
+				023A906020FDE4D800AD130C /* SXTMeController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A62DA68638FF3DB8AB4E48BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InkePlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		023A901F20FDC87200AD130C /* Sources */ = {
@@ -142,8 +383,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				023A902B20FDC87200AD130C /* ViewController.m in Sources */,
+				023A905F20FDE4D800AD130C /* SXTMeController.m in Sources */,
+				023A906720FDF59F00AD130C /* SXTLauchViewController.m in Sources */,
+				023A905620FDE49400AD130C /* BaseViewController.m in Sources */,
 				023A903620FDC87A00AD130C /* main.m in Sources */,
+				023A906C20FDFCFD00AD130C /* XSTFucusViewController.m in Sources */,
+				023A907120FDFD1F00AD130C /* SXTHotViewController.m in Sources */,
+				023A904F20FDDCB100AD130C /* SXTTabBar.m in Sources */,
+				023A905A20FDE4B800AD130C /* SXTMainController.m in Sources */,
+				023A904C20FDDC8800AD130C /* SXTTabBarViewController.m in Sources */,
+				023A906320FDE5E800AD130C /* SXTNaVigationController.m in Sources */,
+				023A907A20FE08A300AD130C /* SXTMainTopView.m in Sources */,
 				023A902820FDC87200AD130C /* AppDelegate.m in Sources */,
+				023A907620FDFD4000AD130C /* SXTNearViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,11 +533,14 @@
 		};
 		023A903A20FDC87A00AD130C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6B1CAE27E8FD5CECA70104 /* Pods-InkePlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24BEZTSJ88;
-				INFOPLIST_FILE = InkePlayer/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/InkePlayer/Class/Other/yingke.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/InkePlayer/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +553,14 @@
 		};
 		023A903B20FDC87A00AD130C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB9B518D1C00361439CA32B /* Pods-InkePlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24BEZTSJ88;
-				INFOPLIST_FILE = InkePlayer/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/InkePlayer/Class/Other/yingke.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/InkePlayer/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
