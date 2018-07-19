@@ -79,11 +79,12 @@
         [self presentViewController:lanchVc animated:YES completion:nil];
         
     }else{
-        self.selectedIndex = idx - SXTItemTypeLive;
-
+        
+       self.selectedIndex = idx - SXTItemTypeLive;
     }
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

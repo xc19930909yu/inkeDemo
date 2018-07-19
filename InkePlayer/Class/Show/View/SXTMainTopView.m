@@ -65,23 +65,17 @@
             btnx = i * btnW;
             
             titleButton.frame = CGRectMake(btnx, 0, btnW, btnH);
-            
             // 监听按钮点击
             [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
             
             [self addSubview:titleButton];
-        
-        
-        if ( i == 1) {
             
+        if ( i == 1) {
             // 添加下划线
             // 下划线宽度 = 按钮文字宽度
             // 线画线中点x= 按钮中心点x
-            
             CGFloat h = 2;
-            
             CGFloat y = 35;
-            
             // 先计算文字尺寸，再给label赋值
             [titleButton.titleLabel sizeToFit];
             
@@ -93,11 +87,8 @@
             lineView.centerX = titleButton.centerX;
             lineView.top = y;
             lineView.backgroundColor = [UIColor whiteColor];
-            
             self.lineView = lineView;
-            
             [self  addSubview:self.lineView];
-            
             
         }
         
@@ -109,11 +100,13 @@
 }
 
 
+///  上面按钮的点击
 - (void)titleClick:(UIButton *)btn{
     self.block(btn.tag);
     [self scrolling:btn.tag];
     
 }
+
 
 - (void)scrolling:(NSInteger)tag{
     
@@ -124,7 +117,11 @@
         self.lineView.centerX = button.centerX;
     }];
     
+    
+    
 }
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

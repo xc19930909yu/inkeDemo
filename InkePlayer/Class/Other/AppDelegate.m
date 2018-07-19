@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "SXTTabBarViewController.h"
-
+#import "SXTLocationManager.h"
+#import "SXTAdvertiseView.h"
 @interface AppDelegate ()
 
 @end
@@ -22,7 +23,21 @@
     SXTTabBarViewController *mainvc = [[SXTTabBarViewController alloc] init];
     
     self.window.rootViewController = mainvc;
+
+    // 载入广告
+    SXTAdvertiseView *adverVc = [SXTAdvertiseView loadAdvertise];
     
+    [self.window addSubview:adverVc];
+    
+    [[SXTLocationManager sharedManager] getGps:^(NSString *lat, NSString *lon) {
+        
+        NSLog(@"%@,%@", lat,lon);
+        
+        
+    }];
+    
+  
+
     return YES;
 }
 

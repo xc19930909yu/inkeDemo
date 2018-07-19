@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SXTNearViewController">
             <connections>
+                <outlet property="bottomHeight" destination="OYH-OU-OAP" id="v67-gO-Bio"/>
+                <outlet property="collectView" destination="Q41-sw-rzR" id="WP3-Nz-maE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +20,29 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Q41-sw-rzR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="InB-rz-vBg">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1cC-Rr-qYQ"/>
+                        <outlet property="delegate" destination="-1" id="dVl-MJ-V2d"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Q41-sw-rzR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="01O-nP-jhA"/>
+                <constraint firstAttribute="bottom" secondItem="Q41-sw-rzR" secondAttribute="bottom" id="OYH-OU-OAP"/>
+                <constraint firstItem="Q41-sw-rzR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="g2h-lg-AJZ"/>
+                <constraint firstAttribute="trailing" secondItem="Q41-sw-rzR" secondAttribute="trailing" id="wpS-6W-gNa"/>
+            </constraints>
         </view>
     </objects>
 </document>

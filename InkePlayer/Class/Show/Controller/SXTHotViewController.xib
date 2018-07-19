@@ -11,14 +11,35 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SXTHotViewController">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="bottomHeight" destination="cJL-N6-nt3" id="WBB-AD-CLb"/>
+                <outlet property="tableView" destination="piF-nv-tgS" id="fJa-NA-3Ch"/>
+                <outlet property="tableWidth" destination="oid-ft-cg4" id="pjJ-ym-WAf"/>
+                <outlet property="view" destination="2ss-Nn-kNc" id="gVw-NN-mmf"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view contentMode="scaleToFill" id="2ss-Nn-kNc">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="piF-nv-tgS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="oid-ft-cg4"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Dcx-Bo-Gce"/>
+                        <outlet property="delegate" destination="-1" id="mUl-lJ-qR1"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="piF-nv-tgS" firstAttribute="leading" secondItem="2ss-Nn-kNc" secondAttribute="leading" id="6HR-4q-seT"/>
+                <constraint firstAttribute="bottom" secondItem="piF-nv-tgS" secondAttribute="bottom" constant="49" id="cJL-N6-nt3"/>
+                <constraint firstItem="piF-nv-tgS" firstAttribute="top" secondItem="2ss-Nn-kNc" secondAttribute="top" id="tnH-ng-XB7"/>
+            </constraints>
         </view>
     </objects>
 </document>

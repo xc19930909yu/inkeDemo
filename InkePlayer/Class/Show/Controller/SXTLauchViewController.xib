@@ -29,20 +29,54 @@
                         <action selector="closeTap:" destination="-1" eventType="touchUpInside" id="QbA-Qv-TLv"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0g-BG-NX2">
+                    <rect key="frame" x="10" y="20" width="72" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="北京市" image="launch_map_on">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ud-SY-Ymx">
+                    <rect key="frame" x="62" y="311.5" width="250" height="44"/>
+                    <state key="normal" title="开始直播" backgroundImage="room_button">
+                        <color key="titleColor" red="0.0" green="1" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="给直播写个标题吧" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p1U-FL-huu">
+                    <rect key="frame" x="62.5" y="241.5" width="250" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="WUd-rR-DBk"/>
+                        <constraint firstAttribute="width" constant="250" id="XaV-Bo-GZp"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="jFb-bT-XZM" secondAttribute="trailing" id="4e3-5f-6bu"/>
                 <constraint firstItem="jFb-bT-XZM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4e5-bL-0qb"/>
+                <constraint firstItem="jFb-bT-XZM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9sK-Hc-paP"/>
                 <constraint firstItem="eyh-nI-2i4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AGk-Wi-ClG"/>
+                <constraint firstItem="4ud-SY-Ymx" firstAttribute="top" secondItem="p1U-FL-huu" secondAttribute="bottom" constant="40" id="Drt-pW-g9z"/>
+                <constraint firstItem="p1U-FL-huu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FoD-AW-sV1"/>
+                <constraint firstItem="I0g-BG-NX2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="JRh-4Q-gO3"/>
+                <constraint firstItem="jFb-bT-XZM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="PFC-5H-xbz"/>
                 <constraint firstAttribute="bottom" secondItem="jFb-bT-XZM" secondAttribute="bottom" id="SeN-sv-ZSh"/>
                 <constraint firstItem="jFb-bT-XZM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lAJ-0n-7F3"/>
+                <constraint firstItem="4ud-SY-Ymx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mDv-zs-e7O"/>
+                <constraint firstItem="4ud-SY-Ymx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vwY-og-JYe"/>
+                <constraint firstItem="I0g-BG-NX2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="waw-SR-Dte"/>
                 <constraint firstAttribute="trailing" secondItem="eyh-nI-2i4" secondAttribute="trailing" id="xBC-Ff-i5H"/>
             </constraints>
+            <point key="canvasLocation" x="58.5" y="53.5"/>
         </view>
     </objects>
     <resources>
         <image name="bg_zbfx" width="250" height="444"/>
         <image name="launch_close" width="64" height="64"/>
+        <image name="launch_map_on" width="26" height="26"/>
+        <image name="room_button" width="250" height="44"/>
     </resources>
 </document>

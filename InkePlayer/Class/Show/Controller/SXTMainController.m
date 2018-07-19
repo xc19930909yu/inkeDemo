@@ -37,6 +37,7 @@
 
 - (SXTMainTopView *)topView{
     if (!_topView) {
+        
         _topView = [[SXTMainTopView alloc] initWithFrame:CGRectMake(0, 0, 200, 40) titles:self.dataList tapView:^(NSInteger tag) {
             
             CGPoint point = CGPointMake(tag * SCREEN_WIDTH, self.contentScrollView.contentOffset.y);
@@ -68,11 +69,11 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"global_search"] style:UIBarButtonItemStyleDone target:self action:@selector(search)];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"title_button_more"] style:UIBarButtonItemStyleDone target:self action:@selector(moreTap)];
+    
 }
 
 
 - (void)setupChildViewContrlllers{
-    
     NSArray *vcNames =@[@"XSTFucusViewController",@"SXTHotViewController",@"SXTNearViewController"];
     
     for ( NSInteger i = 0; i < vcNames.count; i++) {
@@ -89,19 +90,16 @@
     // 设置scrollView的contentSize
     self.contentScrollView.contentSize = CGSizeMake(SCREEN_WIDTH * self.dataList.count, 0);
     
-    
     // 默认展示第二个界面
     self.contentScrollView.contentOffset = CGPointMake(SCREEN_WIDTH, 0);
     
     /// 进入控制器加载第一个页面
-    [self scrollViewDidEndDecelerating:self.contentScrollView];
-    
-    
+   /// [self scrollViewDidEndDecelerating:self.contentScrollView];
+    [self scrollViewDidEndScrollingAnimation:self.contentScrollView];
 }
 
 
 - (void)search{
-    
     
 }
 
@@ -114,13 +112,18 @@
 
 // 减速结束加载子控制器view的方法
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+   
+    [self scrollViewDidEndScrollingAnimation:scrollView];
+}
+
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
     CGFloat width = SCREEN_WIDTH;  /// SCREEN_WIDTH
     CGFloat height = SCREEN_HEIGHT;
     
     CGFloat contentOfset = scrollView.contentOffset.x;
     /// 获取索引值
     NSInteger idx = scrollView.contentOffset.x / width;
-    
     
     //标题线
     [self.topView scrolling:idx];
@@ -137,15 +140,7 @@
     
     [scrollView addSubview:vc.view];
 
-
-
 }
-
-
-//- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
-//
-//
-//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -12,7 +12,7 @@ target 'InkePlayer' do
   pod 'LFLiveKit'
   pod 'Masonry'
   pod 'YYKit', '~> 1.0.9'
- 
+  pod 'MJRefresh' 
 
 
 end

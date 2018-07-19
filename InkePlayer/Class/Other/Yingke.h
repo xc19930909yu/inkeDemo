@@ -14,4 +14,6 @@
 #define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define KTopHeight  [UIApplication sharedApplication].statusBarFrame.size.height + 44
 #endif /* Yingke_h */
