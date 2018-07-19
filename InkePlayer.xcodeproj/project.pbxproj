@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020EF3D92100812200081561 /* AppDelegate+SXTUmeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 020EF3D82100812200081561 /* AppDelegate+SXTUmeng.m */; };
+		020EF3E12100850400081561 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3E02100850400081561 /* libsqlite3.tbd */; };
+		020EF3E3210086F500081561 /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3E2210086F400081561 /* UMCommon.framework */; };
+		020EF3E52100870E00081561 /* UMShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3E42100870E00081561 /* UMShare.framework */; };
+		020EF3E92100875200081561 /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3E72100875100081561 /* libSocialSina.a */; };
+		020EF3ED210087A200081561 /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 020EF3EB210087A200081561 /* UMSocialSDKResources.bundle */; };
+		020EF3EE210087A200081561 /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3EC210087A200081561 /* UShareUI.framework */; };
+		020EF3F0210087E500081561 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3EF210087E500081561 /* Photos.framework */; };
+		020EF3F22100880400081561 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3F12100880400081561 /* CoreTelephony.framework */; };
+		020EF3F42100880F00081561 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3F32100880E00081561 /* SystemConfiguration.framework */; };
+		020EF3F62100881900081561 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3F52100881900081561 /* ImageIO.framework */; };
+		020EF3F9210095AC00081561 /* SXTUserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 020EF3F7210095AC00081561 /* SXTUserHelper.m */; };
 		023A902820FDC87200AD130C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A902720FDC87200AD130C /* AppDelegate.m */; };
 		023A902B20FDC87200AD130C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A902A20FDC87200AD130C /* ViewController.m */; };
 		023A902E20FDC87200AD130C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023A902C20FDC87200AD130C /* Main.storyboard */; };
@@ -64,12 +76,28 @@
 		02A6D73221002028004492BA /* SXTAdvertiseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A6D73121002028004492BA /* SXTAdvertiseView.xib */; };
 		02A6D736210021F7004492BA /* NSString+CachePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A6D735210021F7004492BA /* NSString+CachePath.m */; };
 		02A6D73A210022C5004492BA /* SXTCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A6D739210022C5004492BA /* SXTCacheHelper.m */; };
+		02A6D73D21006648004492BA /* LFLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A6D73B21006647004492BA /* LFLivePreview.m */; };
 		02F6972120FE14520045203C /* SXTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F6971F20FE14520045203C /* SXTLoginViewController.m */; };
 		02F6972220FE14520045203C /* SXTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F6972020FE14520045203C /* SXTLoginViewController.xib */; };
 		953BFA54090E4856F3D2683D /* libPods-InkePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B37ECD0F5C5B3337F1ED0BE2 /* libPods-InkePlayer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		020EF3D72100812200081561 /* AppDelegate+SXTUmeng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SXTUmeng.h"; sourceTree = "<group>"; };
+		020EF3D82100812200081561 /* AppDelegate+SXTUmeng.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+SXTUmeng.m"; sourceTree = "<group>"; };
+		020EF3E02100850400081561 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		020EF3E2210086F400081561 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMCommon.framework; path = ../../Downloads/1854621883/iOS/common/common_ios_1.5.2/normal/UMCommon.framework; sourceTree = "<group>"; };
+		020EF3E42100870E00081561 /* UMShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMShare.framework; path = ../../Downloads/1854621883/iOS/share/share_ios_6.9.4/UMShare.framework; sourceTree = "<group>"; };
+		020EF3E72100875100081561 /* libSocialSina.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSina.a; sourceTree = "<group>"; };
+		020EF3E82100875100081561 /* UMSocialSinaHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaHandler.h; sourceTree = "<group>"; };
+		020EF3EB210087A200081561 /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
+		020EF3EC210087A200081561 /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UShareUI.framework; sourceTree = "<group>"; };
+		020EF3EF210087E500081561 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		020EF3F12100880400081561 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		020EF3F32100880E00081561 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		020EF3F52100881900081561 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		020EF3F7210095AC00081561 /* SXTUserHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTUserHelper.m; sourceTree = "<group>"; };
+		020EF3F8210095AC00081561 /* SXTUserHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTUserHelper.h; sourceTree = "<group>"; };
 		023A902320FDC87200AD130C /* InkePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InkePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		023A902620FDC87200AD130C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		023A902720FDC87200AD130C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -162,6 +190,8 @@
 		02A6D735210021F7004492BA /* NSString+CachePath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CachePath.m"; sourceTree = "<group>"; };
 		02A6D738210022C5004492BA /* SXTCacheHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTCacheHelper.h; sourceTree = "<group>"; };
 		02A6D739210022C5004492BA /* SXTCacheHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTCacheHelper.m; sourceTree = "<group>"; };
+		02A6D73B21006647004492BA /* LFLivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLivePreview.m; sourceTree = "<group>"; };
+		02A6D73C21006648004492BA /* LFLivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivePreview.h; sourceTree = "<group>"; };
 		02F6971E20FE14520045203C /* SXTLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTLoginViewController.h; sourceTree = "<group>"; };
 		02F6971F20FE14520045203C /* SXTLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTLoginViewController.m; sourceTree = "<group>"; };
 		02F6972020FE14520045203C /* SXTLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTLoginViewController.xib; sourceTree = "<group>"; };
@@ -175,18 +205,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020EF3F0210087E500081561 /* Photos.framework in Frameworks */,
+				0278721120FF3D8900C306AE /* libz.tbd in Frameworks */,
+				020EF3F62100881900081561 /* ImageIO.framework in Frameworks */,
+				020EF3F42100880F00081561 /* SystemConfiguration.framework in Frameworks */,
+				020EF3F22100880400081561 /* CoreTelephony.framework in Frameworks */,
+				0278720720FF3D3F00C306AE /* CoreGraphics.framework in Frameworks */,
+				020EF3E12100850400081561 /* libsqlite3.tbd in Frameworks */,
 				0278721D20FF3DDA00C306AE /* VideoToolbox.framework in Frameworks */,
 				0278721B20FF3DC600C306AE /* UIKit.framework in Frameworks */,
+				020EF3EE210087A200081561 /* UShareUI.framework in Frameworks */,
 				0278721920FF3DBC00C306AE /* QuartzCore.framework in Frameworks */,
+				020EF3E3210086F500081561 /* UMCommon.framework in Frameworks */,
 				0278793120FF418C00C306AE /* IJKMediaFramework.framework in Frameworks */,
+				020EF3E92100875200081561 /* libSocialSina.a in Frameworks */,
 				0278721720FF3DB000C306AE /* OpenGLES.framework in Frameworks */,
 				0278721520FF3DA600C306AE /* MobileCoreServices.framework in Frameworks */,
 				0278721320FF3D9900C306AE /* MediaPlayer.framework in Frameworks */,
-				0278721120FF3D8900C306AE /* libz.tbd in Frameworks */,
+				020EF3E52100870E00081561 /* UMShare.framework in Frameworks */,
 				0278720F20FF3D7D00C306AE /* libbz2.tbd in Frameworks */,
 				0278720D20FF3D6E00C306AE /* CoreVideo.framework in Frameworks */,
 				0278720B20FF3D6200C306AE /* CoreMedia.framework in Frameworks */,
-				0278720720FF3D3F00C306AE /* CoreGraphics.framework in Frameworks */,
 				0278720520FF3D3200C306AE /* AudioToolbox.framework in Frameworks */,
 				0278720120FF3B2600C306AE /* AVFoundation.framework in Frameworks */,
 				953BFA54090E4856F3D2683D /* libPods-InkePlayer.a in Frameworks */,
@@ -196,6 +235,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		020EF3E62100875100081561 /* Sina */ = {
+			isa = PBXGroup;
+			children = (
+				020EF3E72100875100081561 /* libSocialSina.a */,
+				020EF3E82100875100081561 /* UMSocialSinaHandler.h */,
+			);
+			path = Sina;
+			sourceTree = "<group>";
+		};
+		020EF3EA210087A200081561 /* UMSocialUI */ = {
+			isa = PBXGroup;
+			children = (
+				020EF3EB210087A200081561 /* UMSocialSDKResources.bundle */,
+				020EF3EC210087A200081561 /* UShareUI.framework */,
+			);
+			path = UMSocialUI;
+			sourceTree = "<group>";
+		};
 		023A901A20FDC87200AD130C = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +322,8 @@
 			children = (
 				023A902620FDC87200AD130C /* AppDelegate.h */,
 				023A902720FDC87200AD130C /* AppDelegate.m */,
+				020EF3D72100812200081561 /* AppDelegate+SXTUmeng.h */,
+				020EF3D82100812200081561 /* AppDelegate+SXTUmeng.m */,
 				023A902920FDC87200AD130C /* ViewController.h */,
 				023A902A20FDC87200AD130C /* ViewController.m */,
 				023A904620FDCC9400AD130C /* yingke.pch */,
@@ -342,6 +401,8 @@
 		023A905220FDE46300AD130C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				02A6D73C21006648004492BA /* LFLivePreview.h */,
+				02A6D73B21006647004492BA /* LFLivePreview.m */,
 				023A907820FE08A300AD130C /* SXTMainTopView.h */,
 				023A907920FE08A300AD130C /* SXTMainTopView.m */,
 				027871F920FF0CE700C306AE /* SXTLiveCell.h */,
@@ -398,6 +459,8 @@
 		0278793B20FF5D3D00C306AE /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				020EF3EA210087A200081561 /* UMSocialUI */,
+				020EF3E62100875100081561 /* Sina */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -414,6 +477,8 @@
 		02A6D737210022A6004492BA /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				020EF3F8210095AC00081561 /* SXTUserHelper.h */,
+				020EF3F7210095AC00081561 /* SXTUserHelper.m */,
 				02A6D738210022C5004492BA /* SXTCacheHelper.h */,
 				02A6D739210022C5004492BA /* SXTCacheHelper.m */,
 			);
@@ -423,6 +488,13 @@
 		9A902700F3AB26A42F4EF3B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				020EF3F52100881900081561 /* ImageIO.framework */,
+				020EF3F32100880E00081561 /* SystemConfiguration.framework */,
+				020EF3F12100880400081561 /* CoreTelephony.framework */,
+				020EF3EF210087E500081561 /* Photos.framework */,
+				020EF3E42100870E00081561 /* UMShare.framework */,
+				020EF3E2210086F400081561 /* UMCommon.framework */,
+				020EF3E02100850400081561 /* libsqlite3.tbd */,
 				0278793020FF418C00C306AE /* IJKMediaFramework.framework */,
 				0278721C20FF3DDA00C306AE /* VideoToolbox.framework */,
 				0278721A20FF3DC600C306AE /* UIKit.framework */,
@@ -495,6 +567,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 023A901A20FDC87200AD130C;
 			productRefGroup = 023A902420FDC87200AD130C /* Products */;
@@ -525,6 +598,7 @@
 				023A902E20FDC87200AD130C /* Main.storyboard in Resources */,
 				02A6D73221002028004492BA /* SXTAdvertiseView.xib in Resources */,
 				023A906020FDE4D800AD130C /* SXTMeController.xib in Resources */,
+				020EF3ED210087A200081561 /* UMSocialSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,8 +660,11 @@
 				027871F520FEF0DA00C306AE /* SXTCreater.m in Sources */,
 				02F6972120FE14520045203C /* SXTLoginViewController.m in Sources */,
 				027871F220FEF08600C306AE /* SXTLive.m in Sources */,
+				020EF3F9210095AC00081561 /* SXTUserHelper.m in Sources */,
 				02A6D72D21001E81004492BA /* SXTAdvertise.m in Sources */,
 				023A903620FDC87A00AD130C /* main.m in Sources */,
+				020EF3D92100812200081561 /* AppDelegate+SXTUmeng.m in Sources */,
+				02A6D73D21006648004492BA /* LFLivePreview.m in Sources */,
 				0278794220FF6AEE00C306AE /* SXTNearCollectionCell.m in Sources */,
 				023A906C20FDFCFD00AD130C /* XSTFucusViewController.m in Sources */,
 				023A907120FDFD1F00AD130C /* SXTHotViewController.m in Sources */,
@@ -752,6 +829,7 @@
 					"$(PROJECT_DIR)/InkePlayer/Supporting\\ Files",
 					"$(PROJECT_DIR)/Pods/YYKit/Vendor",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/InkePlayer/Class/Lib/UMSocialUI",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/InkePlayer/Class/Other/yingke.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/InkePlayer/Supporting Files/Info.plist";
@@ -760,7 +838,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sjkpay.InkePlayer;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InkePlayer/Class/Lib/UMSocial_Sdk_5.2.1",
+					"$(PROJECT_DIR)/InkePlayer/Class/Lib/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
+					"$(PROJECT_DIR)/InkePlayer/Class/Lib/Sina",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Daying.GroupPurchaseBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -778,6 +862,7 @@
 					"$(PROJECT_DIR)/InkePlayer/Supporting\\ Files",
 					"$(PROJECT_DIR)/Pods/YYKit/Vendor",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/InkePlayer/Class/Lib/UMSocialUI",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/InkePlayer/Class/Other/yingke.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/InkePlayer/Supporting Files/Info.plist";
@@ -786,7 +871,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sjkpay.InkePlayer;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InkePlayer/Class/Lib/UMSocial_Sdk_5.2.1",
+					"$(PROJECT_DIR)/InkePlayer/Class/Lib/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
+					"$(PROJECT_DIR)/InkePlayer/Class/Lib/Sina",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Daying.GroupPurchaseBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

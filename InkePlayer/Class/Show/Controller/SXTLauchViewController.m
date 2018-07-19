@@ -7,8 +7,9 @@
 //
 
 #import "SXTLauchViewController.h"
-
+#import "LFLivePreview.h"
 @interface SXTLauchViewController ()
+
 
 @end
 
@@ -24,6 +25,27 @@
     
     
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+- (IBAction)startLive:(id)sender {
+    
+    UIView *back  =[[UIView alloc] initWithFrame:self.view.bounds];
+    
+    back.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:back];
+    
+    LFLivePreview *liveView = [[LFLivePreview alloc] initWithFrame:self.view.bounds];
+    
+    // 开始直播
+    [self.view addSubview:liveView];
+    [liveView startLive];
+    
+   // [self.view addSubview:[[LFLivePreview alloc]  initWithFrame:self.view.bounds]];
+    
+    
+   
+    
 }
 
 - (void)didReceiveMemoryWarning {

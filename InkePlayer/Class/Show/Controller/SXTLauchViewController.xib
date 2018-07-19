@@ -41,6 +41,9 @@
                     <state key="normal" title="开始直播" backgroundImage="room_button">
                         <color key="titleColor" red="0.0" green="1" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="startLive:" destination="-1" eventType="touchUpInside" id="AkN-e2-Hrc"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="给直播写个标题吧" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p1U-FL-huu">
                     <rect key="frame" x="62.5" y="241.5" width="250" height="30"/>

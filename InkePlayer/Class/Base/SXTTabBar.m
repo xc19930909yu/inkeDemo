@@ -114,7 +114,7 @@
     }
     
     [self.carmaButton sizeToFit];
-    self.carmaButton.center = CGPointMake(self.bounds.size.width/2 , self.bounds.size.height - 49);
+    self.carmaButton.center = CGPointMake(self.bounds.size.width/2 , self.bounds.size.height - 35);
     
 }
 

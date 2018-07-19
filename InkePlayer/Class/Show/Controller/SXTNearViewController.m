@@ -17,7 +17,7 @@ static NSString *identifier = @"SXTNearCollectionCell";
 
 #define KMargin 5
 #define KItemWidth 100
-@interface SXTNearViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@interface SXTNearViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectView;
 
@@ -50,17 +50,46 @@ static NSString *identifier = @"SXTNearCollectionCell";
 }
 
 
+
+
 - (void)rquestlocation{
     if ([SXTLocationManager sharedManager].lat == nil || [[SXTLocationManager sharedManager].lat isEqualToString:@""]) {
         
-        // [[SXTLocationManager sharedManager] requestWhenInUseAuthorization];
-        [[SXTLocationManager sharedManager] getGps:^(NSString *lat, NSString *lon) {
-             [self lodaData];
+        if ([self determineWhetherTheAPPOpensTheLocation] == NO) {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示"message:@"请到设置->隐私->定位服务中开启【映客】定位服务，以便于距离筛选能够准确获得你的位置信息" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"设置",nil];
             
-        }];
+            [alert show];
+            
+        }else{
+            [[SXTLocationManager sharedManager] getGps:^(NSString *lat, NSString *lon) {
+                [self lodaData];
+                
+            }];
+        }
+        
+       
     }else{
         
          [self lodaData];
+    }
+    
+}
+
+
+- (BOOL)determineWhetherTheAPPOpensTheLocation{
+    
+    if ([CLLocationManager locationServicesEnabled] && ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedAlways)) {
+        
+        return YES;
+        
+    }else if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied){
+        
+        return NO;
+        
+    }else{
+        
+        return NO;
+        
     }
     
 }
@@ -70,14 +99,14 @@ static NSString *identifier = @"SXTNearCollectionCell";
     [SXTLiveHandler excuteGetNearLiveTaskWithSuccess:^(id obj) {
         
         NSLog(@"数据%@", obj);
-        
+        [self.dataList removeAllObjects];
         [self.dataList addObjectsFromArray:obj];
-        
+         [self.collectView.mj_header endRefreshing];
         [self.collectView reloadData];
         
     } falied:^(id obj) {
-        
-        
+        [self.collectView.mj_header endRefreshing];
+
     }];
     
 }
@@ -89,6 +118,24 @@ static NSString *identifier = @"SXTNearCollectionCell";
     
     self.bottomHeight.constant = 49 + KTopHeight;
     [self.view setNeedsLayout];
+    
+    self.collectView.mj_header   = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        if ([self determineWhetherTheAPPOpensTheLocation] == NO) {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示"message:@"请到设置->隐私->定位服务中开启【映客】定位服务，以便于距离筛选能够准确获得你的位置信息" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"设置",nil];
+            
+            [alert show];
+            
+            [self.collectView.mj_header endRefreshing];
+            
+        }else{
+            [[SXTLocationManager sharedManager] getGps:^(NSString *lat, NSString *lon) {
+                [self lodaData];
+                
+            }];
+        }
+        
+    }];
+    
     
 }
 
@@ -151,6 +198,17 @@ static NSString *identifier = @"SXTNearCollectionCell";
     
     playVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:playVc animated:YES];
+}
+
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{//点击弹窗按钮后
+    
+    if (buttonIndex ==1){//确定
+        
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+        
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {

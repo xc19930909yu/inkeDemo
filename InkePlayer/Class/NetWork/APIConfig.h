@@ -34,7 +34,13 @@
 #define API_NearLocation @"api/live/near_recommend" //?uid=85149891&latitude=40.090562&longitude=116.413353
 
 //欢哥直播地址
-#define Live_Dahuan @"rtmp://live.hkstv.hk.lxdns.com:1935/live/dahuan"
+#define Live_Super  @"rtmp://live.hkstv.hk.lxdns.com:1935/live/superman"
+
+ // @"http://wssource.pull.inke.cn/live/1531979027289751.flv?ikDnsOp=1&ikHost=ws&ikOp=1&codecInfo=8192&ikLog=0&dpSrcG=6&ikMinBuf=3800&ikMaxBuf=4800&ikSlowRate=1.0&ikFastRate=1.0"
+  //@"rtmp://live.hkstv.hk.lxdns.com:1935/live/superman"
+
+//
+
 
 
 #endif /* APIConfig_h */

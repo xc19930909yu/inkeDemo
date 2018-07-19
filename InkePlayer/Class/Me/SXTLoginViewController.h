@@ -7,6 +7,16 @@
 //
 
 #import "BaseViewController.h"
+#import <UMShare/UMShare.h>
+
+@interface UMSAuthInfo : NSObject
+
+@property (nonatomic, assign) UMSocialPlatformType platform;
+@property (nonatomic, strong) UMSocialUserInfoResponse *response;
+
++ (instancetype)objectWithType:(UMSocialPlatformType)platform;
+
+@end
 
 @interface SXTLoginViewController : BaseViewController
 

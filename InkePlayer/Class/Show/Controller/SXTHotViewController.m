@@ -66,10 +66,10 @@ static NSString *identifier = @"SXTLiveCell";
 }
 
 - (void)loadData{
-    [self.dataList removeAllObjects];
     [SXTLiveHandler excuteGetHotLiveTaskWithSuccess:^(id obj) {
         
         NSLog(@"%@", obj);
+        [self.dataList removeAllObjects];
         [self.dataList addObjectsFromArray:obj];
         
         NSLog(@"%f",   self.tableView.frame.size.height);
