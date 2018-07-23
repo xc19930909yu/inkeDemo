@@ -20,6 +20,8 @@
 
 + (void)saveUser;
 
++ (void)loginOut;
+
 
 
 @end

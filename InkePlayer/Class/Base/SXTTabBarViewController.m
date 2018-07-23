@@ -50,7 +50,7 @@
 
 - (void)configureViewControllers{
     
-    NSMutableArray *array = [NSMutableArray arrayWithArray:@[@"SXTMainController",@"SXTLoginViewController"]];
+    NSMutableArray *array = [NSMutableArray arrayWithArray:@[@"SXTMainController",@"SXTMeViewController"]];
     for (NSInteger i = 0; i < array.count; i++) {
         
         NSString *vcName = array[i];

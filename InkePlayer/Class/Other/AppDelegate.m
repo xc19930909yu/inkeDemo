@@ -11,6 +11,8 @@
 #import "SXTLocationManager.h"
 #import "SXTAdvertiseView.h"
 #import "AppDelegate+SXTUmeng.h"
+#import "SXTLoginViewController.h"
+#import "SXTUserHelper.h"
 @interface AppDelegate ()
 
 @end
@@ -21,12 +23,25 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    // 友盟初始化
     [self setupUmeng];
    
-    SXTTabBarViewController *mainvc = [[SXTTabBarViewController alloc] init];
     
-    self.window.rootViewController = mainvc;
-
+    UIViewController *mainVc;
+    
+    if ([SXTUserHelper isAutoLogin]) {
+        
+        mainVc = [[SXTTabBarViewController alloc] init];
+    
+    }else{
+        
+        mainVc = [[SXTLoginViewController alloc] init];
+        
+    }
+    
+    ///SXTTabBarViewController *mainvc = [[SXTTabBarViewController alloc] init];
+    self.window.rootViewController = mainVc;
+    
     // 载入广告
     SXTAdvertiseView *adverVc = [SXTAdvertiseView loadAdvertise];
     

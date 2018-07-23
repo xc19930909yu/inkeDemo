@@ -54,4 +54,13 @@
 
 }
 
++ (void)loginOut{
+    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"username"];
+    
+     [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"iconUrl"];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+}
+
 @end

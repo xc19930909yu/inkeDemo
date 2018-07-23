@@ -19,6 +19,10 @@
 		020EF3F42100880F00081561 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3F32100880E00081561 /* SystemConfiguration.framework */; };
 		020EF3F62100881900081561 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3F52100881900081561 /* ImageIO.framework */; };
 		020EF3F9210095AC00081561 /* SXTUserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 020EF3F7210095AC00081561 /* SXTUserHelper.m */; };
+		021567D62105D3EE0099A88F /* SXTMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021567D42105D3EE0099A88F /* SXTMeViewController.m */; };
+		021567D72105D3EE0099A88F /* SXTMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021567D52105D3EE0099A88F /* SXTMeViewController.xib */; };
+		021567DC2105D46D0099A88F /* SXTMeInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 021567DB2105D46D0099A88F /* SXTMeInfoView.m */; };
+		021567DE2105D4840099A88F /* SXTMeInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021567DD2105D4840099A88F /* SXTMeInfoView.xib */; };
 		023A902820FDC87200AD130C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A902720FDC87200AD130C /* AppDelegate.m */; };
 		023A902B20FDC87200AD130C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A902A20FDC87200AD130C /* ViewController.m */; };
 		023A902E20FDC87200AD130C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023A902C20FDC87200AD130C /* Main.storyboard */; };
@@ -71,6 +75,7 @@
 		0278793E20FF5D6B00C306AE /* SXTLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0278793D20FF5D6B00C306AE /* SXTLocationManager.m */; };
 		0278794220FF6AEE00C306AE /* SXTNearCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0278794020FF6AEE00C306AE /* SXTNearCollectionCell.m */; };
 		0278794320FF6AEE00C306AE /* SXTNearCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0278794120FF6AEE00C306AE /* SXTNearCollectionCell.xib */; };
+		028BE8D02105E71F002F9788 /* SXTSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 028BE8CF2105E71F002F9788 /* SXTSetting.m */; };
 		02A6D72D21001E81004492BA /* SXTAdvertise.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A6D72C21001E81004492BA /* SXTAdvertise.m */; };
 		02A6D73021001FD0004492BA /* SXTAdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A6D72F21001FD0004492BA /* SXTAdvertiseView.m */; };
 		02A6D73221002028004492BA /* SXTAdvertiseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A6D73121002028004492BA /* SXTAdvertiseView.xib */; };
@@ -98,6 +103,12 @@
 		020EF3F52100881900081561 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		020EF3F7210095AC00081561 /* SXTUserHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTUserHelper.m; sourceTree = "<group>"; };
 		020EF3F8210095AC00081561 /* SXTUserHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTUserHelper.h; sourceTree = "<group>"; };
+		021567D32105D3EE0099A88F /* SXTMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTMeViewController.h; sourceTree = "<group>"; };
+		021567D42105D3EE0099A88F /* SXTMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTMeViewController.m; sourceTree = "<group>"; };
+		021567D52105D3EE0099A88F /* SXTMeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTMeViewController.xib; sourceTree = "<group>"; };
+		021567DA2105D46D0099A88F /* SXTMeInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTMeInfoView.h; sourceTree = "<group>"; };
+		021567DB2105D46D0099A88F /* SXTMeInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTMeInfoView.m; sourceTree = "<group>"; };
+		021567DD2105D4840099A88F /* SXTMeInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTMeInfoView.xib; sourceTree = "<group>"; };
 		023A902320FDC87200AD130C /* InkePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InkePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		023A902620FDC87200AD130C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		023A902720FDC87200AD130C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -181,6 +192,8 @@
 		0278793F20FF6AEE00C306AE /* SXTNearCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTNearCollectionCell.h; sourceTree = "<group>"; };
 		0278794020FF6AEE00C306AE /* SXTNearCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTNearCollectionCell.m; sourceTree = "<group>"; };
 		0278794120FF6AEE00C306AE /* SXTNearCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTNearCollectionCell.xib; sourceTree = "<group>"; };
+		028BE8CE2105E71F002F9788 /* SXTSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTSetting.h; sourceTree = "<group>"; };
+		028BE8CF2105E71F002F9788 /* SXTSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTSetting.m; sourceTree = "<group>"; };
 		02A6D72B21001E81004492BA /* SXTAdvertise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTAdvertise.h; sourceTree = "<group>"; };
 		02A6D72C21001E81004492BA /* SXTAdvertise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTAdvertise.m; sourceTree = "<group>"; };
 		02A6D72E21001FD0004492BA /* SXTAdvertiseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTAdvertiseView.h; sourceTree = "<group>"; };
@@ -251,6 +264,25 @@
 				020EF3EC210087A200081561 /* UShareUI.framework */,
 			);
 			path = UMSocialUI;
+			sourceTree = "<group>";
+		};
+		021567D82105D4450099A88F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				028BE8CE2105E71F002F9788 /* SXTSetting.h */,
+				028BE8CF2105E71F002F9788 /* SXTSetting.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		021567D92105D4450099A88F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				021567DA2105D46D0099A88F /* SXTMeInfoView.h */,
+				021567DB2105D46D0099A88F /* SXTMeInfoView.m */,
+				021567DD2105D4840099A88F /* SXTMeInfoView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		023A901A20FDC87200AD130C = {
@@ -340,9 +372,14 @@
 		023A904020FDC9E000AD130C /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				021567D82105D4450099A88F /* Model */,
+				021567D92105D4450099A88F /* View */,
 				02F6971E20FE14520045203C /* SXTLoginViewController.h */,
 				02F6971F20FE14520045203C /* SXTLoginViewController.m */,
 				02F6972020FE14520045203C /* SXTLoginViewController.xib */,
+				021567D32105D3EE0099A88F /* SXTMeViewController.h */,
+				021567D42105D3EE0099A88F /* SXTMeViewController.m */,
+				021567D52105D3EE0099A88F /* SXTMeViewController.xib */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -592,7 +629,9 @@
 				023A906820FDF59F00AD130C /* SXTLauchViewController.xib in Resources */,
 				023A905B20FDE4B800AD130C /* SXTMainController.xib in Resources */,
 				0278794320FF6AEE00C306AE /* SXTNearCollectionCell.xib in Resources */,
+				021567D72105D3EE0099A88F /* SXTMeViewController.xib in Resources */,
 				023A906D20FDFCFD00AD130C /* XSTFucusViewController.xib in Resources */,
+				021567DE2105D4840099A88F /* SXTMeInfoView.xib in Resources */,
 				027871FD20FF0CE700C306AE /* SXTLiveCell.xib in Resources */,
 				023A907720FDFD4000AD130C /* SXTNearViewController.xib in Resources */,
 				023A902E20FDC87200AD130C /* Main.storyboard in Resources */,
@@ -660,12 +699,15 @@
 				027871F520FEF0DA00C306AE /* SXTCreater.m in Sources */,
 				02F6972120FE14520045203C /* SXTLoginViewController.m in Sources */,
 				027871F220FEF08600C306AE /* SXTLive.m in Sources */,
+				028BE8D02105E71F002F9788 /* SXTSetting.m in Sources */,
 				020EF3F9210095AC00081561 /* SXTUserHelper.m in Sources */,
 				02A6D72D21001E81004492BA /* SXTAdvertise.m in Sources */,
+				021567DC2105D46D0099A88F /* SXTMeInfoView.m in Sources */,
 				023A903620FDC87A00AD130C /* main.m in Sources */,
 				020EF3D92100812200081561 /* AppDelegate+SXTUmeng.m in Sources */,
 				02A6D73D21006648004492BA /* LFLivePreview.m in Sources */,
 				0278794220FF6AEE00C306AE /* SXTNearCollectionCell.m in Sources */,
+				021567D62105D3EE0099A88F /* SXTMeViewController.m in Sources */,
 				023A906C20FDFCFD00AD130C /* XSTFucusViewController.m in Sources */,
 				023A907120FDFD1F00AD130C /* SXTHotViewController.m in Sources */,
 				0278793E20FF5D6B00C306AE /* SXTLocationManager.m in Sources */,
