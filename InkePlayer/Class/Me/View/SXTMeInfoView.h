@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *headImg;
 
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
 + (instancetype)loadInfoView;
 
 

@@ -28,14 +28,17 @@
         _infoView = [SXTMeInfoView loadInfoView];
         
         _infoView.frame =  CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*0.45);
-        
-        if ([SXTUserHelper isAutoLogin] == true) {
+        if ([SXTUserHelper isAutoLogin] == YES) {
             [_infoView.headImg downloadImage:[SXTUserHelper sharedUser].iconUrl placeholder:@"default_room"];
+            
+            _infoView.nameLabel.text = [SXTUserHelper sharedUser].username;
 
         }
     }
     return _infoView;
 }
+
+
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

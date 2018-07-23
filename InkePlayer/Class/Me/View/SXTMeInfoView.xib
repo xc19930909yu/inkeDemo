@@ -145,6 +145,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="headImg" destination="MxY-sL-uhP" id="8NT-nW-Nmc"/>
+                <outlet property="nameLabel" destination="DkC-yg-UJ2" id="Y1h-6F-4n3"/>
             </connections>
             <point key="canvasLocation" x="39.5" y="-84.5"/>
         </view>

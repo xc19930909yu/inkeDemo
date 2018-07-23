@@ -14,13 +14,10 @@
 @implementation SXTMeInfoView
 
 
-+ (void)load{
-    
-    
-}
-
-
-
+//+ (void)load{
+//
+//
+//}
 + (instancetype)loadInfoView{
     
     return  [[[NSBundle mainBundle] loadNibNamed:@"SXTMeInfoView" owner:self options:nil] lastObject];
