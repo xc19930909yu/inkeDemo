@@ -113,6 +113,7 @@
     CGFloat controlPointValue = (arc4random()%50 + arc4random()%100) * sign;
     [sPath addCurveToPoint:CGPointMake(position.x, position.y - 300) controlPoint1:CGPointMake(position.x - controlPointValue, position.y - 150) controlPoint2:CGPointMake(position.x + controlPointValue, position.y - 150)];
     positionAnimate.path = sPath.CGPath;
+    
     [imageView.layer addAnimation:positionAnimate forKey:@"heartAnimated"];
     
     [UIView animateWithDuration:duration animations:^{

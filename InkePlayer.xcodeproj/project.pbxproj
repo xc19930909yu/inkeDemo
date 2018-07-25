@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		020EF3D92100812200081561 /* AppDelegate+SXTUmeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 020EF3D82100812200081561 /* AppDelegate+SXTUmeng.m */; };
 		020EF3E12100850400081561 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3E02100850400081561 /* libsqlite3.tbd */; };
-		020EF3E3210086F500081561 /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3E2210086F400081561 /* UMCommon.framework */; };
-		020EF3E52100870E00081561 /* UMShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3E42100870E00081561 /* UMShare.framework */; };
 		020EF3E92100875200081561 /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3E72100875100081561 /* libSocialSina.a */; };
 		020EF3ED210087A200081561 /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 020EF3EB210087A200081561 /* UMSocialSDKResources.bundle */; };
 		020EF3EE210087A200081561 /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EF3EC210087A200081561 /* UShareUI.framework */; };
@@ -86,6 +84,8 @@
 		02A6D736210021F7004492BA /* NSString+CachePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A6D735210021F7004492BA /* NSString+CachePath.m */; };
 		02A6D73A210022C5004492BA /* SXTCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A6D739210022C5004492BA /* SXTCacheHelper.m */; };
 		02A6D73D21006648004492BA /* LFLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A6D73B21006647004492BA /* LFLivePreview.m */; };
+		02DA2A2A21088BF600E5970E /* UMShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DA2A2921088BF600E5970E /* UMShare.framework */; };
+		02DA2A2C21088C2000E5970E /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DA2A2B21088C1F00E5970E /* UMCommon.framework */; };
 		02F6972120FE14520045203C /* SXTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F6971F20FE14520045203C /* SXTLoginViewController.m */; };
 		02F6972220FE14520045203C /* SXTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F6972020FE14520045203C /* SXTLoginViewController.xib */; };
 		953BFA54090E4856F3D2683D /* libPods-InkePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B37ECD0F5C5B3337F1ED0BE2 /* libPods-InkePlayer.a */; };
@@ -95,8 +95,6 @@
 		020EF3D72100812200081561 /* AppDelegate+SXTUmeng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SXTUmeng.h"; sourceTree = "<group>"; };
 		020EF3D82100812200081561 /* AppDelegate+SXTUmeng.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+SXTUmeng.m"; sourceTree = "<group>"; };
 		020EF3E02100850400081561 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		020EF3E2210086F400081561 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMCommon.framework; path = ../../Downloads/1854621883/iOS/common/common_ios_1.5.2/normal/UMCommon.framework; sourceTree = "<group>"; };
-		020EF3E42100870E00081561 /* UMShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMShare.framework; path = ../../Downloads/1854621883/iOS/share/share_ios_6.9.4/UMShare.framework; sourceTree = "<group>"; };
 		020EF3E72100875100081561 /* libSocialSina.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSina.a; sourceTree = "<group>"; };
 		020EF3E82100875100081561 /* UMSocialSinaHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaHandler.h; sourceTree = "<group>"; };
 		020EF3EB210087A200081561 /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
@@ -216,6 +214,8 @@
 		02A6D739210022C5004492BA /* SXTCacheHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTCacheHelper.m; sourceTree = "<group>"; };
 		02A6D73B21006647004492BA /* LFLivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLivePreview.m; sourceTree = "<group>"; };
 		02A6D73C21006648004492BA /* LFLivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivePreview.h; sourceTree = "<group>"; };
+		02DA2A2921088BF600E5970E /* UMShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMShare.framework; path = ../../Downloads/1854621883/iOS/share/share_ios_6.9.4/UMShare.framework; sourceTree = "<group>"; };
+		02DA2A2B21088C1F00E5970E /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMCommon.framework; path = ../../Downloads/1854621883/iOS/common/common_ios_1.5.2/normal/UMCommon.framework; sourceTree = "<group>"; };
 		02F6971E20FE14520045203C /* SXTLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTLoginViewController.h; sourceTree = "<group>"; };
 		02F6971F20FE14520045203C /* SXTLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTLoginViewController.m; sourceTree = "<group>"; };
 		02F6972020FE14520045203C /* SXTLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTLoginViewController.xib; sourceTree = "<group>"; };
@@ -239,16 +239,16 @@
 				0278720720FF3D3F00C306AE /* CoreGraphics.framework in Frameworks */,
 				0278721D20FF3DDA00C306AE /* VideoToolbox.framework in Frameworks */,
 				0278721B20FF3DC600C306AE /* UIKit.framework in Frameworks */,
+				02DA2A2A21088BF600E5970E /* UMShare.framework in Frameworks */,
 				020EF3EE210087A200081561 /* UShareUI.framework in Frameworks */,
 				0278721920FF3DBC00C306AE /* QuartzCore.framework in Frameworks */,
-				020EF3E3210086F500081561 /* UMCommon.framework in Frameworks */,
 				02889A9D2107034A007D99D9 /* libSocialQQ.a in Frameworks */,
 				0278793120FF418C00C306AE /* IJKMediaFramework.framework in Frameworks */,
 				020EF3E92100875200081561 /* libSocialSina.a in Frameworks */,
+				02DA2A2C21088C2000E5970E /* UMCommon.framework in Frameworks */,
 				0278721720FF3DB000C306AE /* OpenGLES.framework in Frameworks */,
 				0278721520FF3DA600C306AE /* MobileCoreServices.framework in Frameworks */,
 				0278721320FF3D9900C306AE /* MediaPlayer.framework in Frameworks */,
-				020EF3E52100870E00081561 /* UMShare.framework in Frameworks */,
 				0278720F20FF3D7D00C306AE /* libbz2.tbd in Frameworks */,
 				0278720D20FF3D6E00C306AE /* CoreVideo.framework in Frameworks */,
 				0278720B20FF3D6200C306AE /* CoreMedia.framework in Frameworks */,
@@ -561,13 +561,13 @@
 		9A902700F3AB26A42F4EF3B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02DA2A2B21088C1F00E5970E /* UMCommon.framework */,
+				02DA2A2921088BF600E5970E /* UMShare.framework */,
 				02889A9E210703A0007D99D9 /* libc++.tbd */,
 				020EF3F52100881900081561 /* ImageIO.framework */,
 				020EF3F32100880E00081561 /* SystemConfiguration.framework */,
 				020EF3F12100880400081561 /* CoreTelephony.framework */,
 				020EF3EF210087E500081561 /* Photos.framework */,
-				020EF3E42100870E00081561 /* UMShare.framework */,
-				020EF3E2210086F400081561 /* UMCommon.framework */,
 				020EF3E02100850400081561 /* libsqlite3.tbd */,
 				0278793020FF418C00C306AE /* IJKMediaFramework.framework */,
 				0278721C20FF3DDA00C306AE /* VideoToolbox.framework */,
@@ -917,7 +917,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/InkePlayer/Class/Other/yingke.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/InkePlayer/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/InkePlayer/Class/Lib/UMSocial_Sdk_5.2.1",
@@ -950,7 +953,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/InkePlayer/Class/Other/yingke.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/InkePlayer/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/InkePlayer/Class/Lib/UMSocial_Sdk_5.2.1",
