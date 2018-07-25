@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XSTFucusViewController">
             <connections>
+                <outlet property="bottomGap" destination="Kj8-bd-LvU" id="RTt-X3-61Y"/>
+                <outlet property="dataTableView" destination="3Jj-6m-Gy3" id="gEz-AD-sTU"/>
+                <outlet property="tableViewWidth" destination="L4E-P5-VYU" id="cHP-fw-LYG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +21,25 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Jj-6m-Gy3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="L4E-P5-VYU"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="613-y8-2J5"/>
+                        <outlet property="delegate" destination="-1" id="Coi-dO-RKV"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Jj-6m-Gy3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2aA-W8-g2e"/>
+                <constraint firstAttribute="bottom" secondItem="3Jj-6m-Gy3" secondAttribute="bottom" constant="49" id="Kj8-bd-LvU"/>
+                <constraint firstItem="3Jj-6m-Gy3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wIF-A9-gtO"/>
+            </constraints>
         </view>
     </objects>
 </document>

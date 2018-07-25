@@ -20,9 +20,23 @@
 - (void)downloadImage:(NSString *)url placeholder:(NSString*)imageName success:(DownloadImageSuccessBlock)success faild:(DownloadImageFailedBlock)failed progress:(DownloadImageProgressBlock)progress{
     
     
-    [self sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:imageName] options:SDWebImageRetryFailed|SDWebImageLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+//    [self sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:imageName] options:SDWebImageRetryFailed|SDWebImageLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+//        progress(receivedSize*1.0/expectedSize);
+//    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+//        if (error) {
+//
+//            failed(error);
+//        }else{
+//
+//            self.image = image;
+//
+//            success(image);
+//        }
+//    }];
+    
+    [self sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:imageName] options:SDWebImageRetryFailed|SDWebImageLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
         progress(receivedSize*1.0/expectedSize);
-    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+    } completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
         if (error) {
             
             failed(error);
@@ -33,7 +47,6 @@
             success(image);
         }
     }];
-    
     
 //    [self sd_setImageWithPreviousCachedImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:imageName] options:options:SDWebImageRetryFailed|SDWebImageLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize) {
 //        progress(receivedSize*1.0/expectedSize);

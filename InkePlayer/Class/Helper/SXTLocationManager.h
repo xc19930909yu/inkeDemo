@@ -11,17 +11,29 @@
 
 
 typedef void(^LocationBlock)(NSString *lat, NSString *lon);
+
+typedef void(^LocationCityBlock)(NSString *cityName);
 @interface SXTLocationManager : NSObject
 
 + (instancetype)sharedManager;
 
 
 - (void)getGps:(LocationBlock)block;
+    
+    
+/// 获取定位的城市
+
+- (void)getCity:(LocationCityBlock)block;
+    
 
 
 @property(nonatomic, copy)NSString *lat;
 
 @property(nonatomic, copy)NSString *lont;
+    
+    
+///  当前城市名
+@property(nonatomic, copy)NSString *currentCity;
 
 
 @end

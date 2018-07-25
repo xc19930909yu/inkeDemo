@@ -63,6 +63,7 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -70,9 +71,7 @@
     
     [self initUI];
     
-    
     [self addChildVC];
-    
     // Do any additional setup after loading the view.
 }
 

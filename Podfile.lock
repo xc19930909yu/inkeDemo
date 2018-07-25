@@ -14,45 +14,57 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - IQKeyboardManager (6.1.0)
   - LFLiveKit (2.6)
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.3)
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
+  - QSDispatchQueue (1.0.1)
+  - QSImageProcess (1.0.1):
+    - QSDispatchQueue
+    - SDWebImage (~> 4.1.0)
+  - SDWebImage (4.1.2):
+    - SDWebImage/Core (= 4.1.2)
+  - SDWebImage/Core (4.1.2)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - IQKeyboardManager
   - LFLiveKit
   - Masonry
   - MJExtension
   - MJRefresh
-  - SDWebImage (~> 3.8.1)
+  - QSImageProcess
   - YYKit (~> 1.0.9)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - IQKeyboardManager
     - LFLiveKit
     - Masonry
     - MJExtension
     - MJRefresh
+    - QSDispatchQueue
+    - QSImageProcess
     - SDWebImage
     - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  IQKeyboardManager: f520b0f411eaefa08058532cb50c48bfeffa8535
   LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  QSDispatchQueue: 3981828538f605d115001ab033e60465a359951a
+  QSImageProcess: ee387582bd47d118842038a8e3f5f4397c40f335
+  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: f9c7332f1c7bd09b7a74406d0e8195228ee61e01
+PODFILE CHECKSUM: 640772e50b9e6956ca21ffa8435d6b58efada325
 
 COCOAPODS: 1.5.3

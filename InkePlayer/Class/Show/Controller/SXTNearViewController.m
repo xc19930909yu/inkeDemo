@@ -128,6 +128,7 @@ static NSString *identifier = @"SXTNearCollectionCell";
             [self.collectView.mj_header endRefreshing];
             
         }else{
+            
             [[SXTLocationManager sharedManager] getGps:^(NSString *lat, NSString *lon) {
                 [self lodaData];
                 

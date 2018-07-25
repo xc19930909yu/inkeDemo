@@ -53,7 +53,6 @@
     
     self.iconView.layer.masksToBounds = YES;
     
-    
     NSTimer *timer =  [NSTimer timerWithTimeInterval:1.0 block:^(NSTimer * _Nonnull timer) {
         
         self.namelabel.text =  @(arc4random()%10000).stringValue;
@@ -83,8 +82,8 @@
     dispatch_resume(self.timer);
     
 }
-
-
+    
+    
 - (void)showMoreLoveAnimateFromView:(UIView *)fromView addToView:(UIView *)addToView {
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 25)];
     CGRect loveFrame = [fromView convertRect:fromView.frame toView:addToView];
@@ -99,6 +98,7 @@
     [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionCurveEaseOut animations:^{
         imageView.transform = CGAffineTransformIdentity;
     } completion:nil];
+    
     
     CGFloat duration = 3 + arc4random()%5;
     CAKeyframeAnimation *positionAnimate = [CAKeyframeAnimation animationWithKeyPath:@"position"];
@@ -115,7 +115,6 @@
     positionAnimate.path = sPath.CGPath;
     [imageView.layer addAnimation:positionAnimate forKey:@"heartAnimated"];
     
-    
     [UIView animateWithDuration:duration animations:^{
         imageView.layer.opacity = 0;
     } completion:^(BOOL finished) {
@@ -129,13 +128,15 @@
     
     [self showMoreLoveAnimateFromView:self.shareBtn addToView:self.view];
     
+    
 }
-
+    
+    
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+    
 /*
 #pragma mark - Navigation
 

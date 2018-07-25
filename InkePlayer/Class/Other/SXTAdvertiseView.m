@@ -12,6 +12,7 @@
 #import "UIImageView+SDWebImage.h"
 #import "NSString+CachePath.h"
 #import "SXTCacheHelper.h"
+#import <SDWebImage/SDImageCache.h>
 
 @interface SXTAdvertiseView()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -76,20 +77,31 @@ static int const  showTime = 3;
         
         //SDWebImageAvoidAutoSetImage 下载完成不会直接赋值给imageview  放在磁盘中
         
-        [[SDWebImageManager sharedManager]downloadImageWithURL:imageUrl options:SDWebImageAvoidAutoSetImage progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
-            
+//        [[SDWebImageManager sharedManager]downloadImageWithURL:imageUrl options:SDWebImageAvoidAutoSetImage progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+//
+//            [SXTCacheHelper setAdvertiseImage:ad.image];
+//
+//            NSLog(@"%@",  @"下载成功");
+//        }];
+        
+        [[SDWebImageManager sharedManager] loadImageWithURL:imageUrl options:SDWebImageAvoidAutoSetImage progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
             [SXTCacheHelper setAdvertiseImage:ad.image];
-            
             NSLog(@"%@",  @"下载成功");
         }];
-
         
         
     } falied:^(id obj) {
         
         
-        
     }];
+    
+    
+   
+    
+      
+    
+    
+    
     
 }
 

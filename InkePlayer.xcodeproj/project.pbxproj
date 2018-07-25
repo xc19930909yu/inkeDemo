@@ -75,6 +75,10 @@
 		0278793E20FF5D6B00C306AE /* SXTLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0278793D20FF5D6B00C306AE /* SXTLocationManager.m */; };
 		0278794220FF6AEE00C306AE /* SXTNearCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0278794020FF6AEE00C306AE /* SXTNearCollectionCell.m */; };
 		0278794320FF6AEE00C306AE /* SXTNearCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0278794120FF6AEE00C306AE /* SXTNearCollectionCell.xib */; };
+		02889A952106F514007D99D9 /* UIImageView+QSImageProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 02889A942106F514007D99D9 /* UIImageView+QSImageProcess.m */; };
+		02889A9C2107034A007D99D9 /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02889A972107034A007D99D9 /* libSocialWeChat.a */; };
+		02889A9D2107034A007D99D9 /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02889A9B2107034A007D99D9 /* libSocialQQ.a */; };
+		02889A9F210703A1007D99D9 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 02889A9E210703A0007D99D9 /* libc++.tbd */; };
 		028BE8D02105E71F002F9788 /* SXTSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 028BE8CF2105E71F002F9788 /* SXTSetting.m */; };
 		02A6D72D21001E81004492BA /* SXTAdvertise.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A6D72C21001E81004492BA /* SXTAdvertise.m */; };
 		02A6D73021001FD0004492BA /* SXTAdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A6D72F21001FD0004492BA /* SXTAdvertiseView.m */; };
@@ -192,6 +196,13 @@
 		0278793F20FF6AEE00C306AE /* SXTNearCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTNearCollectionCell.h; sourceTree = "<group>"; };
 		0278794020FF6AEE00C306AE /* SXTNearCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTNearCollectionCell.m; sourceTree = "<group>"; };
 		0278794120FF6AEE00C306AE /* SXTNearCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTNearCollectionCell.xib; sourceTree = "<group>"; };
+		02889A932106F514007D99D9 /* UIImageView+QSImageProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+QSImageProcess.h"; sourceTree = "<group>"; };
+		02889A942106F514007D99D9 /* UIImageView+QSImageProcess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+QSImageProcess.m"; sourceTree = "<group>"; };
+		02889A972107034A007D99D9 /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
+		02889A982107034A007D99D9 /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		02889A9A2107034A007D99D9 /* UMSocialQQHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialQQHandler.h; sourceTree = "<group>"; };
+		02889A9B2107034A007D99D9 /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
+		02889A9E210703A0007D99D9 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		028BE8CE2105E71F002F9788 /* SXTSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTSetting.h; sourceTree = "<group>"; };
 		028BE8CF2105E71F002F9788 /* SXTSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTSetting.m; sourceTree = "<group>"; };
 		02A6D72B21001E81004492BA /* SXTAdvertise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTAdvertise.h; sourceTree = "<group>"; };
@@ -218,18 +229,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				020EF3F0210087E500081561 /* Photos.framework in Frameworks */,
-				0278721120FF3D8900C306AE /* libz.tbd in Frameworks */,
-				020EF3F62100881900081561 /* ImageIO.framework in Frameworks */,
 				020EF3F42100880F00081561 /* SystemConfiguration.framework in Frameworks */,
-				020EF3F22100880400081561 /* CoreTelephony.framework in Frameworks */,
-				0278720720FF3D3F00C306AE /* CoreGraphics.framework in Frameworks */,
+				0278721120FF3D8900C306AE /* libz.tbd in Frameworks */,
+				02889A9F210703A1007D99D9 /* libc++.tbd in Frameworks */,
 				020EF3E12100850400081561 /* libsqlite3.tbd in Frameworks */,
+				020EF3F22100880400081561 /* CoreTelephony.framework in Frameworks */,
+				020EF3F0210087E500081561 /* Photos.framework in Frameworks */,
+				020EF3F62100881900081561 /* ImageIO.framework in Frameworks */,
+				0278720720FF3D3F00C306AE /* CoreGraphics.framework in Frameworks */,
 				0278721D20FF3DDA00C306AE /* VideoToolbox.framework in Frameworks */,
 				0278721B20FF3DC600C306AE /* UIKit.framework in Frameworks */,
 				020EF3EE210087A200081561 /* UShareUI.framework in Frameworks */,
 				0278721920FF3DBC00C306AE /* QuartzCore.framework in Frameworks */,
 				020EF3E3210086F500081561 /* UMCommon.framework in Frameworks */,
+				02889A9D2107034A007D99D9 /* libSocialQQ.a in Frameworks */,
 				0278793120FF418C00C306AE /* IJKMediaFramework.framework in Frameworks */,
 				020EF3E92100875200081561 /* libSocialSina.a in Frameworks */,
 				0278721720FF3DB000C306AE /* OpenGLES.framework in Frameworks */,
@@ -239,6 +252,7 @@
 				0278720F20FF3D7D00C306AE /* libbz2.tbd in Frameworks */,
 				0278720D20FF3D6E00C306AE /* CoreVideo.framework in Frameworks */,
 				0278720B20FF3D6200C306AE /* CoreMedia.framework in Frameworks */,
+				02889A9C2107034A007D99D9 /* libSocialWeChat.a in Frameworks */,
 				0278720520FF3D3200C306AE /* AudioToolbox.framework in Frameworks */,
 				0278720120FF3B2600C306AE /* AVFoundation.framework in Frameworks */,
 				953BFA54090E4856F3D2683D /* libPods-InkePlayer.a in Frameworks */,
@@ -496,10 +510,30 @@
 		0278793B20FF5D3D00C306AE /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				02889A992107034A007D99D9 /* QQ */,
+				02889A962107034A007D99D9 /* WeChat */,
 				020EF3EA210087A200081561 /* UMSocialUI */,
 				020EF3E62100875100081561 /* Sina */,
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		02889A962107034A007D99D9 /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				02889A972107034A007D99D9 /* libSocialWeChat.a */,
+				02889A982107034A007D99D9 /* UMSocialWechatHandler.h */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		02889A992107034A007D99D9 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				02889A9A2107034A007D99D9 /* UMSocialQQHandler.h */,
+				02889A9B2107034A007D99D9 /* libSocialQQ.a */,
+			);
+			path = QQ;
 			sourceTree = "<group>";
 		};
 		02A6D733210021D7004492BA /* Catergories */ = {
@@ -507,6 +541,8 @@
 			children = (
 				02A6D734210021F7004492BA /* NSString+CachePath.h */,
 				02A6D735210021F7004492BA /* NSString+CachePath.m */,
+				02889A932106F514007D99D9 /* UIImageView+QSImageProcess.h */,
+				02889A942106F514007D99D9 /* UIImageView+QSImageProcess.m */,
 			);
 			path = Catergories;
 			sourceTree = "<group>";
@@ -525,6 +561,7 @@
 		9A902700F3AB26A42F4EF3B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02889A9E210703A0007D99D9 /* libc++.tbd */,
 				020EF3F52100881900081561 /* ImageIO.framework */,
 				020EF3F32100880E00081561 /* SystemConfiguration.framework */,
 				020EF3F12100880400081561 /* CoreTelephony.framework */,
@@ -651,10 +688,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-InkePlayer/Pods-InkePlayer-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,6 +736,7 @@
 				023A905620FDE49400AD130C /* BaseViewController.m in Sources */,
 				027871F820FEF30800C306AE /* MJExtensionConfig.m in Sources */,
 				027871F520FEF0DA00C306AE /* SXTCreater.m in Sources */,
+				02889A952106F514007D99D9 /* UIImageView+QSImageProcess.m in Sources */,
 				02F6972120FE14520045203C /* SXTLoginViewController.m in Sources */,
 				027871F220FEF08600C306AE /* SXTLive.m in Sources */,
 				028BE8D02105E71F002F9788 /* SXTSetting.m in Sources */,
@@ -866,6 +906,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24BEZTSJ88;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/InkePlayer/Supporting\\ Files",
@@ -876,15 +917,14 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/InkePlayer/Class/Other/yingke.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/InkePlayer/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/InkePlayer/Class/Lib/UMSocial_Sdk_5.2.1",
 					"$(PROJECT_DIR)/InkePlayer/Class/Lib/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
 					"$(PROJECT_DIR)/InkePlayer/Class/Lib/Sina",
+					"$(PROJECT_DIR)/InkePlayer/Class/Lib/WeChat",
+					"$(PROJECT_DIR)/InkePlayer/Class/Lib/QQ",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Daying.GroupPurchaseBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -899,6 +939,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24BEZTSJ88;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/InkePlayer/Supporting\\ Files",
@@ -909,15 +950,14 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/InkePlayer/Class/Other/yingke.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/InkePlayer/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/InkePlayer/Class/Lib/UMSocial_Sdk_5.2.1",
 					"$(PROJECT_DIR)/InkePlayer/Class/Lib/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
 					"$(PROJECT_DIR)/InkePlayer/Class/Lib/Sina",
+					"$(PROJECT_DIR)/InkePlayer/Class/Lib/WeChat",
+					"$(PROJECT_DIR)/InkePlayer/Class/Lib/QQ",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Daying.GroupPurchaseBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";

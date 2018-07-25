@@ -12,6 +12,8 @@
 #import "SXTUserHelper.h"
 #import "SXTLoginViewController.h"
 #import "UIImageView+SDWebImage.h"
+//#import "UIImageView+QSImageProcess.h"
+#import "UIImageView+QSImageProcess.h"
 
 @interface SXTMeViewController ()
 
@@ -28,9 +30,16 @@
         _infoView = [SXTMeInfoView loadInfoView];
         
         _infoView.frame =  CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*0.45);
+        
+        _infoView.backgroundColor = [UIColor colorWithRed:103/255.0 green:244/255.0 blue:91/255.0 alpha:1.0];
         if ([SXTUserHelper isAutoLogin] == YES) {
-            [_infoView.headImg downloadImage:[SXTUserHelper sharedUser].iconUrl placeholder:@"default_room"];
+            /// _infoView.headImg.image =   [self cutCicleImageWithImage:[UIImage imageNamed:@"default_room"] size:CGSizeMake(60, 60) redious:30.0];
+            /// [_infoView.headImg downloadImage:[SXTUserHelper sharedUser].iconUrl placeholder:@"default_room"];
             
+            QSImageProcessConfig *config = [QSImageProcessConfig configWithOutputSize:_infoView.headImg.frame.size cornerRadius:30.0 corners:UIRectCornerAllCorners];
+            config.clipBgColor = [UIColor colorWithRed:103/255.0 green:244/255.0 blue:91/255.0 alpha:1.0];
+            /// 利用CoreGraphic来绘制网络图片的圆角
+            [_infoView.headImg qs_setImageWithURL:[NSURL URLWithString:[SXTUserHelper sharedUser].iconUrl]  placeholderImage:[UIImage imageNamed:@"default_room"] config:config];
             _infoView.nameLabel.text = [SXTUserHelper sharedUser].username;
 
         }
@@ -38,6 +47,25 @@
     return _infoView;
 }
 
+
+- (UIImage *)cutCicleImageWithImage:(UIImage*)image size:(CGSize)size redious:(CGFloat)radious{
+    /// 拿到上下文
+    UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    /// 绘制路线
+    CGContextAddPath(UIGraphicsGetCurrentContext(), [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:radious].CGPath);
+    
+    CGContextClip(UIGraphicsGetCurrentContext());
+    
+    [image drawInRect:rect];
+    //[self.view drawRect:rect];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+    
+}
 
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -68,11 +96,12 @@
     
     self.tableView.rowHeight = 60;
     
-    self.tableView.sectionHeaderHeight = 5;
+    //self.tableView.sectionHeaderHeight = 5;
+    
+    self.tableView.sectionFooterHeight = 0;
     
     
     [self loadData];
-    
     
     /// 为group时自动带头部高度
     [self.tableView reloadData];
@@ -161,11 +190,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
     
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
     SXTSetting *set = self.dataList[indexPath.section]
     [indexPath.row];
-    
 //    if (indexPath.section == 2) {
 //        cell.separatorInset = UIEdgeInsetsMake(0, self.view.bounds.size.width, 0, 0);
 //
@@ -174,8 +202,8 @@
 //        cell.separatorInset = UIEdgeInsetsMake(0, 15, 0, 0);
 //
 //    }
-    cell.textLabel.text = set.title;
     
+    cell.textLabel.text = set.title;
     cell.textLabel.textColor = [UIColor grayColor];
     cell.textLabel.font = [UIFont systemFontOfSize:15];
     
@@ -185,7 +213,6 @@
     
     return cell;
 }
-
 
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
@@ -200,14 +227,13 @@
     return  nil;
 }
 
-
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     
     if (section == 0) {
         return SCREEN_HEIGHT*0.45;
     }
     
-    return 0;
+    return 5;
 }
 
 
@@ -227,8 +253,9 @@
         
     }else{
         
-        
+    
     }
+    
 }
 
 

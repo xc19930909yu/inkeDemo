@@ -19,4 +19,7 @@
 #import <UIImageView+WebCache.h>
 #import <MJExtension/MJExtension.h>
 #import <MJRefresh.h>
+#import <QSImageProcess/QSImageProcess.h>
+
+
 #endif /* yingke_pch */

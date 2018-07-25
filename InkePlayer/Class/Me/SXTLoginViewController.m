@@ -14,6 +14,9 @@
 #import "SXTUserHelper.h"
 
 #import "SXTTabBarViewController.h"
+#import "UMSocialSinaHandler.h"
+#import "UMSocialQQHandler.h"
+#import "UMSocialWechatHandler.h"
 
 @implementation UMSAuthInfo
 
@@ -63,28 +66,21 @@
 }
 
 
-// 新浪微博登录
-- (IBAction)sinaLogintap:(id)sender {
-   
-   // __weak BaseViewController *weakSelf = self;
-//    [[UMSocialManager defaultManager] cancelAuthWithPlatform:UMSocialPlatformType_Sina completion:^(id result, NSError *error) {
-//
-//        [weakSelf authForPlatform:]
-//    }];
-    
-    
-    /// 手动点击  能获取到图片 用户名
-    [[UMSocialManager defaultManager]  getUserInfoWithPlatform:UMSocialPlatformType_Sina currentViewController:self completion:^(id result, NSError *error) {
-        NSString *message =  nil;
-        if (error) {
-            message = @"获取用户信息失败";
-            UMSocialLogInfo(@"登录失败 %@",error);
-        }else{
-            
+/// QQ登录
+- (IBAction)qqLoginTap:(id)sender {
+    if ([[UMSocialSinaHandler defaultManager] umSocial_isInstall]) {
+        /// 手动点击  能获取到图片 用户名
+        [[UMSocialManager defaultManager]  getUserInfoWithPlatform:UMSocialPlatformType_QQ currentViewController:self completion:^(id result, NSError *error) {
+            NSString *message =  nil;
+            if (error) {
+                message = @"获取用户信息失败";
+                UMSocialLogInfo(@"登录失败 %@",error);
+            }else{
+                
                 UMSocialUserInfoResponse *userInfoResp = [[UMSocialUserInfoResponse alloc] init];
                 
                 userInfoResp = result;
-            
+                
                 NSLog(@"用户ID%@",userInfoResp.uid);
                 [SXTUserHelper sharedUser].username  = userInfoResp.name;
                 
@@ -95,19 +91,123 @@
                 
                 self.view.window.rootViewController = [[SXTTabBarViewController alloc] init];
                 
+                
+            }
+            if (message) {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                                message:message
+                                                               delegate:nil
+                                                      cancelButtonTitle:NSLocalizedString(@"sure", @"确定")
+                                                      otherButtonTitles:nil];
+                [alert show];
+            }
+        }];
+        
+    }else{
+        
+        NSLog(@"没有安装QQapp!");
+        
+    }
+    
+}
+
+/// 微信登录
+- (IBAction)wechatLoginTap:(id)sender {
+
+    if ([[UMSocialSinaHandler defaultManager] umSocial_isInstall]) {
+        /// 手动点击  能获取到图片 用户名
+        [[UMSocialManager defaultManager]  getUserInfoWithPlatform:UMSocialPlatformType_WechatSession currentViewController:self completion:^(id result, NSError *error) {
+            NSString *message =  nil;
+            if (error) {
+                message = @"获取用户信息失败";
+                UMSocialLogInfo(@"登录失败 %@",error);
             
-        }
-        if (message) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
-                                                            message:message
-                                                           delegate:nil
-                                                  cancelButtonTitle:NSLocalizedString(@"sure", @"确定")
-                                                  otherButtonTitles:nil];
-            [alert show];
-        }
-    }];
+            }else{
+                
+                UMSocialUserInfoResponse *userInfoResp = [[UMSocialUserInfoResponse alloc] init];
+                
+                userInfoResp = result;
+                
+                NSLog(@"用户ID%@",userInfoResp.uid);
+                [SXTUserHelper sharedUser].username  = userInfoResp.name;
+                
+                [SXTUserHelper sharedUser].iconUrl  = userInfoResp.iconurl;
+                
+                // 保存入本地
+                [SXTUserHelper saveUser];
+                
+                self.view.window.rootViewController = [[SXTTabBarViewController alloc] init];
+                
+            }
+            if (message) {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                                message:message
+                                                               delegate:nil
+                                                      cancelButtonTitle:NSLocalizedString(@"sure", @"确定")
+                                                      otherButtonTitles:nil];
+                [alert show];
+            }
+        }];
+        
+    }else{
+        
+        NSLog(@"没有安装微信app!");
+        
+    }
     
     
+    
+}
+
+
+// 新浪微博登录
+- (IBAction)sinaLogintap:(id)sender {
+// __weak BaseViewController *weakSelf = self;
+//    [[UMSocialManager defaultManager] cancelAuthWithPlatform:UMSocialPlatformType_Sina completion:^(id result, NSError *error) {
+//
+//        [weakSelf authForPlatform:]
+//    }];
+    
+    if ([[UMSocialSinaHandler defaultManager] umSocial_isInstall]) {
+        /// 手动点击  能获取到图片 用户名
+        [[UMSocialManager defaultManager]  getUserInfoWithPlatform:UMSocialPlatformType_Sina currentViewController:self completion:^(id result, NSError *error) {
+            NSString *message =  nil;
+            if (error) {
+                message = @"获取用户信息失败";
+                UMSocialLogInfo(@"登录失败 %@",error);
+            }else{
+                
+                UMSocialUserInfoResponse *userInfoResp = [[UMSocialUserInfoResponse alloc] init];
+                
+                userInfoResp = result;
+                
+                NSLog(@"用户ID%@",userInfoResp.uid);
+                [SXTUserHelper sharedUser].username  = userInfoResp.name;
+                
+                [SXTUserHelper sharedUser].iconUrl  = userInfoResp.iconurl;
+                
+                // 保存入本地
+                [SXTUserHelper saveUser];
+                
+                self.view.window.rootViewController = [[SXTTabBarViewController alloc] init];
+                
+                
+            }
+            if (message) {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                                message:message
+                                                               delegate:nil
+                                                      cancelButtonTitle:NSLocalizedString(@"sure", @"确定")
+                                                      otherButtonTitles:nil];
+                [alert show];
+            }
+        }];
+        
+    }else{
+        
+        NSLog(@"没有安装微博app!");
+    
+    }
     ///  自动登录
 //    [[UMSocialManager defaultManager] authWithPlatform:UMSocialPlatformType_Sina currentViewController:nil completion:^(id result, NSError *error) {
 //

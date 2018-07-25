@@ -13,6 +13,7 @@
 #import "AppDelegate+SXTUmeng.h"
 #import "SXTLoginViewController.h"
 #import "SXTUserHelper.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
 @interface AppDelegate ()
 
 @end
@@ -55,6 +56,7 @@
     }];
     
   
+    IQKeyboardManager.sharedManager.enable = YES;
 
     return YES;
 }

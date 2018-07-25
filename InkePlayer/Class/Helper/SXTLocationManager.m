@@ -13,6 +13,9 @@
 @property(nonatomic, strong)CLLocationManager *locManager;
 
 @property(nonatomic, copy)LocationBlock block;
+    
+    
+@property(nonatomic, copy)LocationCityBlock cityBlock;
 
 @end
 
@@ -75,12 +78,31 @@
     //    NSLog(@"%f", coor.latitude);
     [SXTLocationManager sharedManager].lont = @(coor.longitude).stringValue;
     [SXTLocationManager sharedManager].lat = @(coor.latitude).stringValue;
-    self.block(@(coor.longitude).stringValue, @(coor.latitude).stringValue);
-    
+    if(self.block != nil){
+        self.block(@(coor.longitude).stringValue, @(coor.latitude).stringValue);
+        
+    }
     [self.locManager stopUpdatingLocation];
+    
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    
+    [geocoder reverseGeocodeLocation:newLocation completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+       
+        for (CLPlacemark *placein  in placemarks) {
+            
+            [SXTLocationManager sharedManager].currentCity = placein.locality;
+            ///NSLog(@"城市名%@", placein.locality);
+            if(self.cityBlock != nil){
+                self.cityBlock(placein.locality);
+
+            }
+        }
+        
+    }];
+    
 }
 
-
+    
 /// 实现回传经纬度
 - (void)getGps:(LocationBlock)block{
     
@@ -89,6 +111,17 @@
     [self.locManager startUpdatingLocation];
     
 }
+    
+
+    /// 拿到定位的城市名 回传
+- (void)getCity:(LocationCityBlock)block{
+    
+    self.cityBlock = block;
+    
+    // 开始定位
+    [self.locManager startUpdatingLocation];
+}
+
 
 
 @end
