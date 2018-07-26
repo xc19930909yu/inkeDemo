@@ -13,4 +13,7 @@
 
 @property(nonatomic, strong)SXTLive *live;
 
+
+- (void)cancelTimer;
+
 @end

@@ -42,6 +42,13 @@
     
 }
 
+/// 取消定时器
+- (void)cancelTimer{
+    
+    dispatch_source_cancel(_timer);
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor clearColor];
@@ -67,19 +74,21 @@
 
 
 - (void)initTimer{
-    
+    /// 获取全局队列
+    ///dispatch_queue_t  queue =  dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     // 初始化心形动画
-    
     self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
-    
+    /// 用DISPATCH_now系统休眠时，不进行计时 dispatch_walltime(NULL, 0)
     dispatch_source_set_timer(self.timer, DISPATCH_TIME_NOW, 1*NSEC_PER_SEC, 0);
     
     dispatch_source_set_event_handler(self.timer, ^{
         
+        NSLog(@"计时");
         [self showMoreLoveAnimateFromView:self.shareBtn addToView:self.view];
     });
     
     dispatch_resume(self.timer);
+    
     
 }
     
@@ -121,6 +130,7 @@
     } completion:^(BOOL finished) {
         [imageView removeFromSuperview];
     }];
+    
     
 }
 

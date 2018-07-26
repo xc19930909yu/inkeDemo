@@ -16,6 +16,13 @@
 #import <IQKeyboardManager/IQKeyboardManager.h>
 @interface AppDelegate ()
 
+
+{
+    
+    UIBackgroundTaskIdentifier _bgTask;
+    
+    NSInteger counter;
+}
 @end
 
 @implementation AppDelegate
@@ -67,8 +74,53 @@
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
 
+- (void)backgroundHandler {
+    
+    NSLog(@"### -->backgroundinghandler");
+    
+    UIApplication *app = [UIApplication sharedApplication];
+    
+    _bgTask =  [app beginBackgroundTaskWithExpirationHandler:^{
+        
+         [app endBackgroundTask:self->_bgTask];
+        
+         self->_bgTask = UIBackgroundTaskInvalid;
+        
+    }];
+    
+       // Start the long-running task
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        
+        while (1) {
+            
+            NSLog(@"counter:%ld", self->counter++);
+            
+            sleep(1);
+            
+        }
+        
+    });
+    
+}
+
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
+    
+    counter = 0;
+//    BOOL backgroundAccepted = [[UIApplication sharedApplication] setKeepAliveTimeout:600 handler:^{ [self backgroundHandler]; }];
+//
+//    if (backgroundAccepted)
+//
+//    {
+//
+//        NSLog(@"backgrounding accepted");
+//
+//    }
+//
+//
+//
+//    [self backgroundHandler];
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }

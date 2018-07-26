@@ -60,7 +60,11 @@
 
 - (void)closeLive:(UIButton*)button{
     
+    
+    [self.liveChatVc cancelTimer];
     [self.navigationController popViewControllerAnimated:YES];
+
+    
 }
 
 
