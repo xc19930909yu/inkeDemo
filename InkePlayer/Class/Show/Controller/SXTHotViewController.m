@@ -120,6 +120,19 @@ static NSString *identifier = @"SXTLiveCell";
     
     playVc.live = live;
     
+    /// 定义一个动画 实现页面跳转
+    CATransition *amin = [[CATransition alloc] init];
+    
+    amin.duration = 1;
+    
+    amin.type = @"pageCurl";
+    
+    amin.subtype =  kCATransitionFromRight;
+    
+    amin.timingFunction =  [CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    
+    [self.navigationController.view.layer addAnimation:amin forKey:nil];
+    
     playVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:playVc animated:YES];
 //    MPMoviePlayerViewController *moviewVc = [[MPMoviePlayerViewController alloc]initWithContentURL:[NSURL URLWithString:live.streamAddr]];

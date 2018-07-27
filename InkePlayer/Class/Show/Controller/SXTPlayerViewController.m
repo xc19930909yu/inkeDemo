@@ -60,8 +60,20 @@
 
 - (void)closeLive:(UIButton*)button{
     
-    
     [self.liveChatVc cancelTimer];
+    
+    CATransition *amin = [[CATransition alloc] init];
+    
+    amin.duration = 1;
+    
+    amin.type = @"pageUnCurl";
+    
+    amin.subtype =  kCATransitionFromRight;
+    
+    amin.timingFunction =  [CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    
+    [self.navigationController.view.layer addAnimation:amin forKey:nil];
+    
     [self.navigationController popViewControllerAnimated:YES];
 
     

@@ -197,6 +197,17 @@ static NSString *identifier = @"SXTNearCollectionCell";
     
     playVc.live = live;
     
+    CATransition *amin = [[CATransition alloc] init];
+    
+    amin.duration = 1;
+    
+    amin.type = @"rippleEffect";
+    
+    amin.subtype =  kCATransitionFromRight;
+    
+    amin.timingFunction =  [CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    
+    [self.navigationController.view.layer addAnimation:amin forKey:nil];
     playVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:playVc animated:YES];
 }
