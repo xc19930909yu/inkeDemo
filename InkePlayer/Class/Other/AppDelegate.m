@@ -144,6 +144,7 @@ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     if (!result) {
         // 其他如支付等SDK的回调
         
+        return YES;
     }
     return result;
     
@@ -156,6 +157,8 @@ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     BOOL result = [[UMSocialManager defaultManager] handleOpenURL:url];
     if (!result) {
         // 其他如支付等SDK的回调
+        return YES;
+        
     }
     return result;
 }

@@ -14,6 +14,7 @@
 #import "UIImageView+SDWebImage.h"
 //#import "UIImageView+QSImageProcess.h"
 #import "UIImageView+QSImageProcess.h"
+#import "OpenTableViewController.h"
 
 @interface SXTMeViewController ()
 
@@ -252,6 +253,12 @@
         keyWindow.rootViewController = loginVc;
         
     }else{
+        OpenTableViewController *opens = [[OpenTableViewController alloc] initWithNibName:@"OpenTableViewController" bundle:nil];
+        
+        opens.hidesBottomBarWhenPushed = YES;
+        
+        [self.navigationController pushViewController:opens animated:YES];
+        
         
     
     }

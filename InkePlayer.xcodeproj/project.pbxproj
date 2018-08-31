@@ -43,6 +43,8 @@
 		023A907620FDFD4000AD130C /* SXTNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A907420FDFD4000AD130C /* SXTNearViewController.m */; };
 		023A907720FDFD4000AD130C /* SXTNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023A907520FDFD4000AD130C /* SXTNearViewController.xib */; };
 		023A907A20FE08A300AD130C /* SXTMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 023A907920FE08A300AD130C /* SXTMainTopView.m */; };
+		026AD4612111AB3F00CE6864 /* OpenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 026AD45F2111AB3F00CE6864 /* OpenTableViewController.m */; };
+		026AD4622111AB3F00CE6864 /* OpenTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 026AD4602111AB3F00CE6864 /* OpenTableViewController.xib */; };
 		027871E620FEDEAB00C306AE /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 027871E520FEDEAB00C306AE /* UIImageView+SDWebImage.m */; };
 		027871E920FEE3DE00C306AE /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 027871E820FEE3DE00C306AE /* HttpTool.m */; };
 		027871EC20FEE95100C306AE /* SXTBaseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 027871EB20FEE95100C306AE /* SXTBaseHandle.m */; };
@@ -150,6 +152,9 @@
 		023A907520FDFD4000AD130C /* SXTNearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SXTNearViewController.xib; sourceTree = "<group>"; };
 		023A907820FE08A300AD130C /* SXTMainTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTMainTopView.h; sourceTree = "<group>"; };
 		023A907920FE08A300AD130C /* SXTMainTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTMainTopView.m; sourceTree = "<group>"; };
+		026AD45E2111AB3F00CE6864 /* OpenTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenTableViewController.h; sourceTree = "<group>"; };
+		026AD45F2111AB3F00CE6864 /* OpenTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenTableViewController.m; sourceTree = "<group>"; };
+		026AD4602111AB3F00CE6864 /* OpenTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenTableViewController.xib; sourceTree = "<group>"; };
 		027871E320FED9B600C306AE /* APIConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
 		027871E420FEDEAB00C306AE /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
 		027871E520FEDEAB00C306AE /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
@@ -394,6 +399,9 @@
 				021567D32105D3EE0099A88F /* SXTMeViewController.h */,
 				021567D42105D3EE0099A88F /* SXTMeViewController.m */,
 				021567D52105D3EE0099A88F /* SXTMeViewController.xib */,
+				026AD45E2111AB3F00CE6864 /* OpenTableViewController.h */,
+				026AD45F2111AB3F00CE6864 /* OpenTableViewController.m */,
+				026AD4602111AB3F00CE6864 /* OpenTableViewController.xib */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -673,6 +681,7 @@
 				023A907720FDFD4000AD130C /* SXTNearViewController.xib in Resources */,
 				023A902E20FDC87200AD130C /* Main.storyboard in Resources */,
 				02A6D73221002028004492BA /* SXTAdvertiseView.xib in Resources */,
+				026AD4622111AB3F00CE6864 /* OpenTableViewController.xib in Resources */,
 				023A906020FDE4D800AD130C /* SXTMeController.xib in Resources */,
 				020EF3ED210087A200081561 /* UMSocialSDKResources.bundle in Resources */,
 			);
@@ -764,6 +773,7 @@
 				027871FC20FF0CE700C306AE /* SXTLiveCell.m in Sources */,
 				023A907620FDFD4000AD130C /* SXTNearViewController.m in Sources */,
 				0278793420FF421A00C306AE /* SXTPlayerViewController.m in Sources */,
+				026AD4612111AB3F00CE6864 /* OpenTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

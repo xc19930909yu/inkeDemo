@@ -49,6 +49,7 @@ static NSString *identifier = @"SXTFucusCell";
     
     
 - (void)initUI{
+    
     self.dataTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.dataTableView registerNib:[UINib nibWithNibName:@"SXTLiveCell" bundle:nil] forCellReuseIdentifier:identifier];
     
@@ -62,6 +63,24 @@ static NSString *identifier = @"SXTFucusCell";
         
     }];
     
+}
+
+/// 设置collection的偏移量
+-(void) scrollToSectionHeader:(int)section {
+   // NSIndexPath *indexPath = [NSIndexPath
+  //                            indexPathForRow:0 inSection:section];
+//    UICollectionViewLayoutAttributes
+//       *attribs =
+//     [self.dataTableView
+//     layoutAttributesForSupplementaryElementOfKind:UICol
+//     lectionElementKindSectionHeader
+//     atIndexPath:indexPath];
+    
+//    CGPoint topOfHeader = CGPointMake(0,
+ //                                     attribs.frame.origin.y -
+  //                                     self.dataTableView.contentInset.top);
+  //  [self.dataTableView
+   //  setContentOffset:topOfHeader animated:YES];
 }
     
     

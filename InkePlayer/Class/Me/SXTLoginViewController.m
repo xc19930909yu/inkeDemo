@@ -68,15 +68,14 @@
 
 /// QQ登录
 - (IBAction)qqLoginTap:(id)sender {
-    if ([[UMSocialSinaHandler defaultManager] umSocial_isInstall]) {
-        /// 手动点击  能获取到图片 用户名
+//    if ([[UMSocialQQHandler defaultManager] umSocial_isInstall]) {
+       /// 手动点击  能获取到图片 用户名
         [[UMSocialManager defaultManager]  getUserInfoWithPlatform:UMSocialPlatformType_QQ currentViewController:self completion:^(id result, NSError *error) {
             NSString *message =  nil;
             if (error) {
                 message = @"获取用户信息失败";
                 UMSocialLogInfo(@"登录失败 %@",error);
             }else{
-                
                 UMSocialUserInfoResponse *userInfoResp = [[UMSocialUserInfoResponse alloc] init];
                 
                 userInfoResp = result;
@@ -103,18 +102,18 @@
             }
         }];
         
-    }else{
-        
-        NSLog(@"没有安装QQapp!");
-        
-    }
+//    }else{
+//
+//        NSLog(@"没有安装QQapp!");
+//
+//    }
     
 }
 
 /// 微信登录
 - (IBAction)wechatLoginTap:(id)sender {
 
-    if ([[UMSocialSinaHandler defaultManager] umSocial_isInstall]) {
+    if ([[UMSocialWechatHandler defaultManager] umSocial_isInstall]) {
         /// 手动点击  能获取到图片 用户名
         [[UMSocialManager defaultManager]  getUserInfoWithPlatform:UMSocialPlatformType_WechatSession currentViewController:self completion:^(id result, NSError *error) {
             NSString *message =  nil;
